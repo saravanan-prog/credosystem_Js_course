@@ -1,6 +1,7 @@
-var candidateName = "vijay joseph";
-var standingArea = null;
-var cmStatus;
+var candidateName = "vijay joseph"; // defined
+
+var cmStatus; //undefiend
+var standingArea = null; //null
 
 
 
