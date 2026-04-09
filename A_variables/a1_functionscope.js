@@ -1,6 +1,6 @@
 var firstNumber = 1000;
 var secondNumber = 6000;
-firstNumber = 6000;
+firstNumber = 6000
 
 var result = firstNumber + secondNumber;
 
