@@ -39,21 +39,20 @@
 
 ### 🧠 MODULE 4: Core Concepts (🔥 IMPORTANT)
 
-- Execution Context
-- Call Stack
 - Hoisting
 - Scope (Global, Block, Function)
 - Closures
 - this keyword
 
-### ⚡ MODULE 5: Arrays & Objects
+### ⚡ MODULE 5: String & Arrays & Objects
 
+- String and  methods
 - Arrays
 - Methods: map, filter, reduce, forEach,find, some, every
 - Objects
 - Properties & methods
-- Object destructuring
-- Spread & rest operator
+
+
 
 ### ⏳ MODULE 6: Asynchronous JavaScript
 
@@ -83,10 +82,9 @@
 
 ### ⚙️ MODULE 9: Browser APIs
 
-fetch() API
-LocalStorage / SessionStorage
-Cookies
-Timers (setTimeout, setInterval)
+- fetch() API
+- LocalStorage / SessionStorage
+- Cookies
 
 
 ### 🧪 MODULE 10: Debugging & Testing
