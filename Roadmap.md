@@ -31,6 +31,7 @@
 ### 🔵 MODULE 3: Functions
 
 - Function declaration
+- Excution context and call Stack
 - Function expression
 - Arrow functions
 - Parameters & return
