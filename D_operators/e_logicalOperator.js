@@ -1,32 +1,45 @@
-const productName = "headset";
-const productPrice = 250;
-const productisAvailable = true;
-const productType = "accesaries"
+/**
+ *   Logical Operator
+ *     (&&) AND -  [all conditon true]  = true otherwise false
+ *     (||) OR  -  [any condition true] = true otherwise false
+ *     (!)  Not -  [Negativity check]
+ */
 
 
-const andResult = (productName == "headset") && (productPrice > 100) && (productisAvailable) // all conditon true = true otherwise false
-const orResult = (productName == "mobile") || (productPrice > 100) || (productisAvailable) // any conditon true = true otherwise false
+/* Example : AND */
+
+
+var x = 100
+var y = 100
+
+var a = 500
+var b = 600
+
+console.log( (x==y) && (a==b) ) 
+
+
+/*  Example : OR */
+
+
+var x = 100
+var y = 100
+
+var a = 500
+var b = 600
+
+console.log( (x==y) || (a==b) ) 
+
+/* Example : Not (!) */
+
+var productAvailable = false;
+var product = "apple"
+var productprice = 100;
+
+var productOffer = !productAvailable ? "stock empty" : productprice * 5 /100;
+
+console.log("productOffer===>",productOffer)
 
 
 
-if(!productName){
-    console.log("ProductName not avaible")
-}
 
 
-
-
-/* calulator */
-
-let firstNumber =100;
-let secondNumber = 500;
-
-if(!firstNumber)
-    console.log("First number is required")
-else if(!secondNumber)
-    console.log("second number is required")
-else {
-    let result  = firstNumber + secondNumber
-    console.log("result====>",result)
-}
-   

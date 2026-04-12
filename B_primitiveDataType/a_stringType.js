@@ -1,10 +1,21 @@
 // String
-let candidateName = "saravanan";
+let candidateFirstName = "saravanan";
+let candidateLastName = "Durai";
+
+console.log(candidateFirstName + candidateLastName)
+
+
+
+
 let firstNumber = "100";
 let secondNumber = "200";
+
+console.log(firstNumber + secondNumber)
+
+
+
 let productAvailabe = "true";
-let result = firstNumber + secondNumber;
 
 
 
-console.log("result====>",typeof result)
+

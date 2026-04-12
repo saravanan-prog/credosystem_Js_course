@@ -1,11 +1,13 @@
-let firstNumber = 1000;
-let secondNumber = 1000;
+/**
+ *  let - block scope
+ *      - cannot re-declare
+ *      - but allow re-assign
+ */
 
-firstNumber = 600;
-secondNumber = 600;
+let bottle = "juice"
+// let bottle = "oil"
 
-let result  = firstNumber + secondNumber;
-
-console.log("result=======>",result)
+bottle = "oil" /* re-assign */
 
 
+console.log("bottle ====>",bottle)

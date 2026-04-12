@@ -26,4 +26,4 @@ const employees = [
     }
 ]
 
-console.log("employees------>",employees[1].name)
+console.log("employees------>",employees[0].name)

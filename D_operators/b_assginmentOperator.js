@@ -1,17 +1,9 @@
-let x = 5;
-x = x + 10; // normal flow
-x += 15 //addtion assignment
+let x = 10;
+let y = 10;
+
+x = x + y  // old-way
+x += y     // New-way
 
 
-
-
-let y = 500;
-y -= 200 // subraction assginment
-
-
-let z = 25
-z *= 5   //multiplication assignment
- 
-
-console.log("z====>",z)
+console.log(x)
 

@@ -5,4 +5,4 @@ var standingArea = null; //null
 
 
 
-console.log("Standing Area=====>",standingArea)
+console.log("standingArea =====>", standingArea)

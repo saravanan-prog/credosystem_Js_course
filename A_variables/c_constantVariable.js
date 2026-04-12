@@ -1,8 +1,17 @@
-const dbUrl = "mysql:3306/mydb";
-const secretKey = "my-website";
-const paymentType = "paypal-payment-key"
+/**
+ *  const -> stands for constant
+ *        -> restricted re-declare
+ *        -> restricted re-assign
+ */
 
 
 
+const bottle = "oil";
+const plasticCover = "chilliPowder";
 
-dbUrl = "saravanna"
+
+
+// Project - vise
+
+const dbUrl = "mysql://localhost:3306/mydb";
+const paymentUrl = "razorpay:9123@abl.com"
