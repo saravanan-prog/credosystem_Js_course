@@ -1,11 +1,13 @@
 /* Example 1  */
 
-function greet() {
+function greetMessage() {
     
     return "Welcome to Javascript world";
 }
 
-let greetResult = greet()
+let greetResult = greetMessage()
+
+
 
 
 /* Example 2 */
@@ -20,6 +22,7 @@ function additionCalculation() {
 let additionResult = additionCalculation()
 
 
+
 /* Example 3 */
 
 function sumofAverageCalculation() {
@@ -32,9 +35,19 @@ function sumofAverageCalculation() {
 
 let averageResult = sumofAverageCalculation()
 
+console.log("averageResult=====>",averageResult)
+
+
+/* Example 4 simple understand */
+
+function simpleFunction(){
+    console.log("I am simple function")
+}
+
+simpleFunction()
 
 
 
 
 
-console.log("greetResult=====>",greetResult)
+
