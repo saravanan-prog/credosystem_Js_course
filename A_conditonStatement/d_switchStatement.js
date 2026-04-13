@@ -1,0 +1,18 @@
+
+let grade = "A"
+
+switch(grade){
+
+    case "A":
+        console.log("Excellent Performer")
+        break;
+    case "B":
+        console.log("Average Performer")
+    
+    case "C" :
+        console.log("Poor")
+        break;
+
+    default:
+        console.log("Fail")
+}
