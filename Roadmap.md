@@ -44,6 +44,7 @@
 - Scope (Global, Block, Function)
 - Closures
 - this keyword
+- String, number, Date Functions
 
 ### ⚡ MODULE 5: String & Arrays & Objects
 
