@@ -1,12 +1,18 @@
+const welcomeMessage = () => "Hello welcome to javascript";
+const addition = (firstNumber,secondNumber) =>  firstNumber + secondNumber
+const loanEmiAmount = (principal,interestRate) => principal + (principal * interestRate / 100 )
+
+
 
 /* Arrow functions */
 const greetNew = () => "Hello!";
 let message = greetNew()
 
 
-
 const findCircleArea = (radius) => radius * radius * 22/7;
 let circleArea = findCircleArea(10)
+
+
 
 /* Single Parameter (no parentheses needed) */
 const square = x => x * x;
@@ -18,9 +24,12 @@ const add = (a, b) => a + b;
 let additonResult = add(100,50)
 
 
+
+
 /* Multiple lines (use {} and return) */
 
 const promocodeValidation = (price,promocode) => {
+
     if(promocode = "sara20"){
         return price - price * 20 / 100;
     }
