@@ -1,6 +1,6 @@
 function processUser(name, callback) {
-     console.log("Processing user:", name);
-     callback();
+    console.log("Processing user:", name);
+    callback();
 }
 
 function done() {
