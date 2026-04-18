@@ -8,29 +8,33 @@
  
 /** 
  *  Example  1 - Shallow copy 
- * */ 
-
-var fruits = ["apple","orange","grapes","banana"]             
-
-var newFruits = fruits   /* Shallow copy */
-
-
-newFruits.push("gova")
-newFruits.push("banana")
-
-
-
-// console.log("fruits====>",fruits)
-// console.log("new Fruits====>",newFruits);
-
-
-/** 
- *  Example  2 - Deep copy 
- * 
- *  Spread Operator (...)
  * 
  * 
  * */ 
+
+var fruits = ["apple","orange","grapes","banana"]              // 200tkl856
+var newFruits = fruits   /* Shallow copy */                    // &200tkl856
+
+
+newFruits.push("pineapple")
+newFruits.push("papaya")
+
+
+// console.log("Fruits ======>",fruits)
+// console.log("New Fruits=====>",newFruits)
+
+
+
+
+
+
+
+
+
+
+
+
+/* Example - Spread operator  */ 
 
 
 

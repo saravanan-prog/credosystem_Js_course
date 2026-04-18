@@ -26,12 +26,14 @@ secondNumber = String(secondNumber)
 
 var result  = firstNumber + secondNumber;    // 100500
 
+//console.log(result)
+
 
 
 
 /* Example 3 : Boolean conversation */
 
-let productAvailable = 0
+let productAvailable = 1
 var result = Boolean(productAvailable)
 
 
