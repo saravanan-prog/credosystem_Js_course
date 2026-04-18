@@ -1,7 +1,20 @@
 /* Normal function  */
+
+
 function welcomeMessage(){
     console.log("welcome to Javascript world")
 }
+
+welcomeMessage()
+
+const expression = function (){
+    console.log("welcome to Javascript world")
+}
+expression()
+
+
+
+
 
 
 
@@ -15,6 +28,7 @@ const addition =  function(){
 
 let additionResult = addition();
 
+console.log("additionResult===>",additionResult)
 
 
 
@@ -29,4 +43,4 @@ const loanEmiAmount = function (...arg){
 }
 
 let homeloanResult = loanEmiAmount(100000,8)
-console.log("homeloanResult=====>",homeloanResult)
+//console.log("homeloanResult=====>",homeloanResult)

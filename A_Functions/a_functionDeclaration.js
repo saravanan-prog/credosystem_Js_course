@@ -1,3 +1,42 @@
+
+console.log("Program Start....")
+
+function addition(){
+    let a = 10;
+    let b = 5;
+    let c = a + b;
+    
+    return c
+}
+
+let result = addition()
+
+console.log("result====>",result)
+
+console.log("Program End")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Example 1  */
 
 function greetMessage() {
@@ -6,6 +45,8 @@ function greetMessage() {
 }
 
 let greetResult = greetMessage()
+
+
 
 
 
@@ -35,16 +76,10 @@ function sumofAverageCalculation() {
 
 let averageResult = sumofAverageCalculation()
 
-console.log("averageResult=====>",averageResult)
 
 
-/* Example 4 simple understand */
 
-function simpleFunction(){
-    console.log("I am simple function")
-}
 
-simpleFunction()
 
 
 

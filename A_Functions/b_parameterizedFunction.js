@@ -4,29 +4,30 @@ function sumofCalulation(firstNumber,secondNumber){
   return firstNumber + secondNumber
 }
 
-let sumofResult = sumofCalulation();
+let sumofResult = sumofCalulation(100,50);
+
+
 
 /* Example 2 Simple Default Value */
 
-function subraction(a = 1, b = 5) {
+function subraction(a = 1 , b = 1 ) {
     return a + b;
 }
 
 let subractionResult1 = subraction(2, 3);        // your param result = 5
-let subractionResult2 = subraction();            //  default result = 6
+let subractionResult2 = subraction();            //  default result = 2
 
 
 
 
-function intersetCalc( loanType="home-loan",principalAmount, interestRate=8 ){
+function intersetCalc( principalAmount, interestRate = 8 ,loanType="home-loan"){
  
   let accurateInterestAmount = principalAmount * interestRate / 100;
   let emiAmount = principalAmount + accurateInterestAmount
   return emiAmount
 }
 
-let result = intersetCalc(null,100000,10);
-
+let result = intersetCalc(100000,11.25);
 
 
 
@@ -34,6 +35,7 @@ let result = intersetCalc(null,100000,10);
 /* function rest parameter */
 
 function homeLoanInterestCalc(...arg){
+
   
   let principalAmount = arg[0];
   let interestRate  =  arg[1]
@@ -44,7 +46,7 @@ function homeLoanInterestCalc(...arg){
 
 let emiAmount = homeLoanInterestCalc(500000,8,"homeLoan","Indian-bank","chennai")
 
-console.log("emi amount===>", emiAmount)
+//console.log("emi amount===>", emiAmount)
 
 
 
