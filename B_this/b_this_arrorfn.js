@@ -1,5 +1,6 @@
-this.employee_firstName = "vimala"
-this.employee_lastName  = "Raja sekar"
+
+this.employee_firstName = "Rajesh"
+this.employee_lastName = "Kumar";
 
 const employee = {
     empid : 121,
@@ -7,9 +8,10 @@ const employee = {
     employee_lastName : "Durai",
     employee_fullname : () => {
         return this.employee_firstName + " " + this.employee_lastName
+       
     }
 }
 
-let fullname  = employee.employee_fullname()
+let result =  employee.employee_fullname(employee)
+console.log(result)
 
-console.log(fullname)

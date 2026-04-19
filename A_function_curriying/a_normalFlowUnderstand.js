@@ -1,16 +1,25 @@
+function employeeSalaryCompute(basic,hra,pa){
 
-function student(mark){
-    function gradeCalcuation(){
-        let result = mark >= 90 ? "First-class" : "Second-class"
-        return result
+    return function(pf){
+        let salary = (basic + hra + pa) - pf
+
+        return function(tax){
+            let netSalary = salary - (salary * tax / 100)
+            return netSalary;
+        }
+       
     }
 
-    return gradeCalcuation
+    
 }
 
-let studentGrade = student(25)
-let grade = studentGrade()
+let netSalary = employeeSalaryCompute(5000,2500,50000)(3600)(8)
 
 
 
-console.log("grade=====>",grade)
+
+
+
+
+
+

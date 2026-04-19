@@ -27,11 +27,13 @@ switch(day){
 
 
 
-
+console.log("current Date===>",currentDate)
 let offerDate = currentDate + 10
 
+console.log("offerDate Date===>",offerDate)
 
-console.log("day===>",day)
+if(currentDate < offerDate){
+    console.log("offer enable")
+}
 
 
-console.log(`${currentDate}-${month}-${year}`)
