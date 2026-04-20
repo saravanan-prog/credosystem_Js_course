@@ -89,6 +89,6 @@
 
 ### 🧪 MODULE 10: Debugging & Testing
 
-Console debugging
-Chrome DevTools
-Error handling (try...catch)
+- Console debugging
+- Chrome DevTools
+- Error handling (try...catch)
