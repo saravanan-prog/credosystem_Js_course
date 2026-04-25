@@ -1,10 +1,12 @@
 let number = [100,200,300,400,750]
 
-let newArr = number.forEach((value,index,arr)=>{
-    // console.log("value====>",value,"index====>",index,"arr===>",arr)
-    
+let sumofArr = 0
 
-    return value
-});
+number.forEach(
+    (value,index,arr) => {
+        sumofArr += value
+    }
+)
 
-console.log("newArr===>",newArr)
+console.log("sumofArr===>",sumofArr)
+

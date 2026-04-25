@@ -1,17 +1,27 @@
 let orignalArr = [100,200,300,400,750]
 
-let multiplyFive = orignalArr.map((value,index,arr)=>{
-    
-    return value * 5
-});
-
-let multiply2 = orignalArr.map(val => val * 2 )
-
+let duplicateArr = orignalArr.map(
+    (value,index,arr) =>{
+        return value
+    }
+)
 
 
+let newArrmulfive = orignalArr.map(
+    (value,index,arr) =>{
+        return value * 5
+    }
+)
+
+
+console.log("orignalArr===>",orignalArr)
+console.log("duplicateArr===>",duplicateArr)
+console.log("newArrmulfive===>",newArrmulfive)
 
 
 
-console.log("multiplyFive ====>",multiplyFive)
 
-console.log("multiply2====>",multiply2)
+
+
+
+
