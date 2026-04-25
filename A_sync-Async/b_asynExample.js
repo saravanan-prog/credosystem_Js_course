@@ -5,11 +5,11 @@ console.log("third attempt")
 
 setTimeout(()=>{
     for(let i=0; i<1000000000; i++){
-        console.log(i)
+        console.log("Fourth Attempt")
     }
-},2000)
+},6000)
 
 
-console.log("Fourth Attempt")
 console.log("fith Attempt")
-console.log("six attempt")
+console.log("six Attempt")
+console.log("seven attempt")
