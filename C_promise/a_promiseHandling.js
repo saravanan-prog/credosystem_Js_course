@@ -1,16 +1,25 @@
-let number = new Promise((resolve,reject) => resolve(100))
 
-number
-   .then( item => console.log("data==>",item))
-   .catch (error => console.log("error==>",error))
-    
+/* Example 1 */
 
 
+let candidateName = new Promise(
+   (resolve,reject)=>{
+      resolve("Saravanan")
+      
+   }
+)
 
 
-let candidateName = Promise.resolve("Saravanan")
+candidateName.then(
+   (data) => console.log("data===>",data)
+).catch(
+   (error) => console.error("error===>",error)
+)
 
-candidateName
-    .then( item => console.log("resolved===>",item))
-    .catch(error => console.log(error))
+
+/* Example 2 */
+
+let candidateLastname = Promise.resolve("Durai")
+candidateLastname.then( data => console.log("lastName===>",data)).catch(error=> console.error(error))
+
 

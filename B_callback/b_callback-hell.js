@@ -1,32 +1,41 @@
-function productItem(callback){
-    let price  = 6000
+function getProduct(callback1,callback2){
+    
+   let product = {}
+
     setTimeout(()=>{
-        console.log("Product")
-        callback(price)
-    },1000)
+        product ={
+            productId : 1,
+            productName :"apple",
+            prductPrice : 120
+        }
+        callback1(product,callback2)
+        
+       
+    },3000)
+    
 }
 
-function productOffer(price,callback){
-    let offer =null
-    setTimeout(()=>{
-        offer = price * 3 / 100
-        callback(offer)
-    },2000)
+function discountOffer(product,callback){
+    let offer = 50;
+    const { prductPrice } = product
+    let discountPrice = prductPrice - (prductPrice * offer/100)
+    product.prductPrice = discountPrice
+
+    callback("SUN10",product)
+    
 }
 
-function accuPrice(accPrice,offer){
-    setTimeout(() => {
-       accPrice = accPrice - offer 
-       console.log("accPrice===>",accPrice)
-    }, 1000);
+function couponcodeValidation(couponCode,product){
+    let day = new Date().getDay()
+    if(couponCode && day == 0)
+        product.prductPrice = product.prductPrice - 10;
+    
+
+    console.log("product====>",product)
 }
 
-//callback-hell
-productItem(
-    (price)=>{
-        productOffer(price,
-            (offer)=>{
-                 accuPrice(price,offer)
-            }
-        )
-})
+  getProduct(discountOffer,couponcodeValidation)  // waiting pool
+
+
+
+       

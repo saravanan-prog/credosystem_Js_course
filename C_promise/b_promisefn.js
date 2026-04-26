@@ -1,31 +1,37 @@
 function product() {
-  let productPrice = 5000;
-
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(productPrice);
+      var product = {
+        productId: 1,
+        productName: "apple",
+        prductPrice: 120,
+      };
+
+      resolve(product);
     }, 3000);
   });
 }
 
-function offer(price) {
-  let offerPercentage = 3;
+function discountOffer(product) {
+  let offer = 50;
+  const { prductPrice } = product;
+  let discountPrice = prductPrice - (prductPrice * offer) / 100;
+  product.prductPrice = discountPrice;
 
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      let offerPrice = (price * 8) / 100;
-      resolve(offerPrice);
-    }, 4000);
-  });
+  return Promise.resolve(product);
 }
 
+function couponcodeValidation(couponCode, product) {
+  let day = new Date().getDay();
+  if (couponCode && day == 0) product.prductPrice = product.prductPrice - 10;
 
-
+  console.log("product====>", product);
+}
 
 product()
-  .then((price) =>
-    offer(price).then((offerAmt) => {
-      console.log(offerAmt);
-    }),
+  .then((productList) =>
+    discountOffer(productList).then((discountProductList) =>
+      couponcodeValidation("SUN10", discountProductList),
+    ),
   )
-  .catch((error) => console.log(error));
+  .catch((error) => console.error(error));
