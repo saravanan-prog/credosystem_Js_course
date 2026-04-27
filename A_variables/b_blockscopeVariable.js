@@ -4,10 +4,10 @@
  *      - but allow re-assign
  */
 
-let bottle = "juice"
-// let bottle = "oil"
 
-bottle = "oil" /* re-assign */
+let bottle = "water"
+
+bottle = "oil" 
 
 
-console.log("bottle ====>",bottle)
+console.log("bottle===>",bottle)

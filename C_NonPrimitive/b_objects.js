@@ -7,7 +7,7 @@
         "location":"chennai"
   }
 
-//   console.log("student Name===>",student.name)
+//   console.log("student Name ==>",student.name)
 //   console.log("student age===>",student.age)
 //   console.log("student school===>",student['school'])
 
@@ -32,8 +32,8 @@ const employee = {
     }
 }
 
-console.log("employeee Name ======>",employee.name)
-console.log("employeee skillset ======>",employee.skillset)
+console.log("employeee Name ======>",employee.name)   
+console.log("employeee skillset ======>",employee.skillset)       
 console.log("employeee main skill ======>",employee.skillset[2])
 console.log("employee total experience details====>",employee.yearofExp)
 console.log("current working status====>",employee.yearofExp["2025-2026"])

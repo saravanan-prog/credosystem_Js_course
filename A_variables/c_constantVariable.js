@@ -1,5 +1,6 @@
 /**
- *  const -> stands for constant
+ *  const -> block scope
+ *        -> stands for constant
  *        -> restricted re-declare
  *        -> restricted re-assign
  */
@@ -7,6 +8,8 @@
 
 
 const bottle = "oil";
+bottle = "water";
+
 const plasticCover = "chilliPowder";
 
 

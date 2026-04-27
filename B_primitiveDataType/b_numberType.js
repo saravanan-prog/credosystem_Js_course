@@ -13,4 +13,4 @@ let simpleInterest  = principalAmount * intrestPerncentage / 100;
 
 let currentBalance = -500;
 
-console.log("currentBalance ====>",typeof currentBalance)
+console.log("currentBalance ====>", currentBalance)
