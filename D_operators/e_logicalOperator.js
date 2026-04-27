@@ -6,26 +6,15 @@
  */
 
 
-/* Example : AND */
-
-
 var x = 100
 var y = 100
 
 var a = 500
 var b = 600
-
+/* Example : AND */
 console.log( (x==y) && (a==b) ) 
 
-
 /*  Example : OR */
-
-
-var x = 100
-var y = 100
-
-var a = 500
-var b = 600
 
 console.log( (x==y) || (a==b) ) 
 

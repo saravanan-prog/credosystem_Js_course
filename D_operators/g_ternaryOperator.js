@@ -1,12 +1,8 @@
     /*** 
-     *   Ternary Operator => similar as if else condition.
-     *    
-     *    ?            => TRUE Block
-     * 
-     *    :            => False Block
-     * 
-     * 
-     * **/
+     *   Ternary Operator - similar as if else condition.
+     *     
+     *    ?  True Block    :  False Block
+     **/
     
     
     let age = 53;
