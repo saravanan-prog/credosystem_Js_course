@@ -12,15 +12,15 @@ var y = 100
 var a = 500
 var b = 600
 /* Example : AND */
-console.log( (x==y) && (a==b) ) 
+console.log( (x==y) && (a==b) )                  //  -->  false
 
 /*  Example : OR */
 
-console.log( (x==y) || (a==b) ) 
+console.log( (x==y) || (a==b) )                 // --> true
 
 /* Example : Not (!) */
 
-var productAvailable = false;
+var productAvailable = true;
 var product = "apple"
 var productprice = 100;
 

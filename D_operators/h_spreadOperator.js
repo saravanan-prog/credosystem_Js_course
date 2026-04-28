@@ -20,8 +20,8 @@ newFruits.push("pineapple")
 newFruits.push("papaya")
 
 
-// console.log("Fruits ======>",fruits)
-// console.log("New Fruits=====>",newFruits)
+//  console.log("Fruits ======>",fruits)
+//  console.log("New Fruits=====>",newFruits)
 
 
 
@@ -34,7 +34,7 @@ newFruits.push("papaya")
 
 
 
-/* Example - Spread operator  */ 
+/* Example2 - Spread operator  */ 
 
 
 
@@ -43,7 +43,7 @@ var fruits = ["apple","orange","grapes","banana"]
 var newFruits = [...fruits]                             /* Deep copy */
  
 newFruits.push("gova")
-newFruits.push("banana")
+newFruits.push("lichi")
 
 
 console.log("fruits====>",fruits)
