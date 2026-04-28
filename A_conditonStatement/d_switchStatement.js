@@ -19,6 +19,7 @@ switch(grade){
         break;
     case "B":
         console.log("Average Performer")
+        break;
     
     case "C" :
         console.log("Poor")
