@@ -1,14 +1,18 @@
 let numbers = [10,20,30];
 
 for (let item of numbers) {
-    //console.log(item);                //10, 20, 30
+    // console.log(item);                // itterate and returns to values -> 10 20 30
 }
 
 
-let str = "hello world"
 
 
-for(let item of str){
+
+
+let text = "hello world"
+
+
+for(let item of text){
   
     console.log(item)            
     

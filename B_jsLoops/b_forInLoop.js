@@ -1,10 +1,24 @@
 /* Example 1 :  String itteration using in operator */
 
-let string = "Hello welcome to Javascript world"
+let text = "Hello welcome to Javascript world"
 
-// for(let item in string){
-//      console.log("item====>",string.charAt(item))
-// }
+for(let item in text){
+     // console.log("item====>",text.charAt(item))
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Example 2 : Array itteration */
@@ -12,5 +26,5 @@ let string = "Hello welcome to Javascript world"
 let fruits = ["apple","orage","grapes"]
 
 for(let item in fruits){
-     console.log("item===>",fruits[item])
+    console.log("item===>",fruits.at(item) )
 }
