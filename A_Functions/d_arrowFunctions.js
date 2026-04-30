@@ -1,75 +1,41 @@
+const welcomeMsg = () => "Hello welcome to Javascript"
 
-const greet = () => "welcome to arrow function world"
-let greetResult = greet()
+const subraction = (a,b) =>  a - b
 
-const greetNew = () => "Hello!";
-let greetNewResult = greetNew()
+const multiplication = (a,b) => a * b
 
-const sum = (a,b) => a + b
-let sumResult = sum(25,25)
+const squareArea = side => side * side
 
+const sutdentResult = (m1,m2,m3) => {
+    let total = m1 + m2 + m3
+    let marks = [m1,m2,m3]
+    let avg   = total / 3 
+    let result;
+    console.log(m2)
 
-/* Single Parameter (no parentheses needed) */
-const homeLoanintrest = pricipalAmt => pricipalAmt * 8 /100
-let sumResult = homeLoanintrest(100000)
+    for(let i=0; i<marks.length; i++) {
+        if(marks[i] > 35){
+            result = "Pass"
+        }
+        else{
+            result = "Fail"
+            break;
+        }
 
-const square = x => x * x;
-let squareArea = square(10*10)
-
-
-
-const addition = (firstNumber,secondNumber) =>  firstNumber + secondNumber
-let additionResult = addition(25,25)
-
-const loanEmiAmount = (principal,interestRate) => principal + (principal * interestRate / 100 )
-let loanEmiAmountResult = loanEmiAmount(1000000,8)
-
-
-const employeeDetails = (...arg) => {
-    let empName = arg[0]
-    let empSalary = arg[1]
-    let bonus = empSalary * 3 /100
-    let pf = 3600
-    let netSalary  = empSalary + bonus - 3600
-    return netSalary
-} 
-let employeeDetailsResult = employeeDetails("saravanan",50000)
-
-
-
-const findCircleArea = (radius) => radius * radius * 22/7;
-let circleArea = findCircleArea(10)
-
-
-
-/* Single Parameter (no parentheses needed) */
-const square = x => x * x;
-let squareArea = square(10*10)
-
-
-
-const add = (a, b) => a + b;
-let additonResult = add(100,50)
-
-
-
-
-/* Multiple lines (use {} and return) */
-
-const promocodeValidation = (price,promocode) => {
-
-    if(promocode = "sara20"){
-        return price - price * 20 / 100;
     }
-    else{
-        return price
+
+    let obj = {
+        "student_total_mark" :total,
+        "student_avg_mark" : avg,
+        "student_result" : result
+
     }
- 
-};
 
-let discountPrice = promocodeValidation(1000,"niva60")
+    return obj
 
-
+}
 
 
+let result = sutdentResult(100,94,80)  // call by value
 
+console.log(result)

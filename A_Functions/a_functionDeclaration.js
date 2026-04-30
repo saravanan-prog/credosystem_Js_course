@@ -6,7 +6,7 @@ function addition(){
     let b = 5;
     let c = a + b;
     
-    return c
+    return a
 }
 
 let result = addition()

@@ -1,8 +1,10 @@
 function processUser(name,callback) {
 
+
     setTimeout(()=>{
         console.log("Processing user:", name);
-        callback();
+        callback()
+       
     },1000)
     
    
@@ -13,5 +15,6 @@ function done() {
 }
 
 processUser("saravanan",done)
+
 
 
