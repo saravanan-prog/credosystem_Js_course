@@ -4,8 +4,8 @@ const option = {
   method: "GET",
 };
 
-const productDiv = document.getElementById("productList");
 
+const productDiv = document.getElementById("productList");
 var tableView = `<table>
     <tr>    
         <th>title </th>
@@ -14,21 +14,25 @@ var tableView = `<table>
     </tr>
  `;
 
+
+
+
 fetch(url, option)
   .then((response) => response.json())
   .then((data) => {
+    console.log("data====>", data)
     data.map(
       (value) =>
-        (tableView += `
-                <tr>
-                    <td>${value?.title}</td>
-                    <td>${value?.price}</td>
-                    <td> <img src =${value?.image} height=100  widht=100/></td>
-                </tr>
-            `),
-    );
+        tableView += `
+                    <tr>
+                        <td>${value?.title}</td>
+                        <td>${value?.price}</td>
+                        <td> <img src =${value?.image} height=100  widht=100/></td>
+                    </tr>
+                `),
 
-    tableView += `</table>`;
+
+      tableView += `</table>`;
     productDiv.innerHTML = tableView;
   })
   .catch((error) => console.log(error));
