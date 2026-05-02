@@ -8,12 +8,18 @@
 </head>
 <body>
     
-    <form novalidate onsubmit="formValidate()"> 
+    <form novalidate onsubmit="formValidate(event)"> 
         
         <div>
             <label for="username">Mobile Number <span style="color:red">*</span></label>
-            <input type="text" id="username" name="username"  maxlength="6"   >
-            <div class="username_erromsg" style="color:red"></div>
+            <input type="text" id="username" name="username" required     >
+            <div id="username_error" style="color:red"></div>
+        </div>
+
+        <div>
+            <label for="password">Password <span style="color:red">*</span></label>
+            <input type="password" id="password" name="password" required     >
+            <div id="password_error" style="color:red"></div>
         </div>
         <div>
             <button type="submit">Register</button>
