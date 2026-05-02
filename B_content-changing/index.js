@@ -1,35 +1,50 @@
-const selector = document.querySelectorAll("#firstId")
 
 
-for(let item of selector){
-   item.innerText = "Hello Welcome to Javascript program"
+const message = document.getElementById('welcome-msg')
+const colorList = document.getElementsByClassName('colors')
+const tagSelector = document.getElementsByTagName("h5")
+const querySelectorById = document.querySelectorAll(".colors")
+
+
+
+
+message.innerHTML = `<span style = color:red > Hello Saravanan !!! </span>`
+
+for(let i=0; i<colorList.length; i++){
+    colorList[i].innerText = "React JS"
 }
 
+const content = document.getElementById("content")
 
-const content = document.getElementsByClassName('content')
-console.log(content)
-content[0].innerHTML = "<span style='color:green'>Hello Sarath </span>"
+/* Remove old design */
+var removebtn = document.getElementById("remove-design")
 
-
-
-const username = document.getElementById('username')
-username.value = "saravanan@gmail.com";
-
-
-const element = document.querySelector(".container")
-element.style.color = "white";
-element.style.backgroundColor = "green"
-element.style.padding = "20px";
-element.style.marginTop = "20px";
+removebtn.addEventListener("click",()=>{
+    console.log("remove button is clicked.....")
+    content.classList.remove('basic-design')
+})
 
 
+/*add new design */
 
-const toogleAction =() => { 
+const addnewDesignbtn = document.getElementById('add-new-design')
+addnewDesignbtn.addEventListener("click",()=>{
+    content.classList.add('advanced-design')
+})
 
-   console.log("Action triggered")
+/* toggle btn */
 
-   const toggleContainer = document.querySelector('.toogle-container')
-   toggleContainer.classList.toggle("hideShow")
+const togglebtn = document.getElementById('togglebtn')
+togglebtn.addEventListener('click',()=>{
 
-}
+    content.classList.toggle('advanced-design')
+})
+
+
+
+
+
+
+
+
 

@@ -1,24 +1,18 @@
-/* Method -1 Event handling */
-
-const btn = document.getElementById('btn')
-
-btn.addEventListener("click",()=>{
-    console.log("event is triggered")
-})
+const textInput = document.getElementById('text-input')
 
 
-const username = document.getElementById('username')
-username.addEventListener('change',(event)=>{
-    console.log(event.target.value)
-})  
+const changeText = () => textInput.value = "Hello React JS"
+const textTyping = (event) => console.log(event.target.value)
 
 
-// method 2 
+var firstnum = document.getElementById('first-value').value;
+var secondnum = document.getElementById('second-value').value
+const result = document.getElementById('result')
 
-function clickme(){
-    console.log("button is clicked")
-}
+const firstValuechange = (event) => firstnum = event.target.value
+const secondValueChange = (event) =>secondnum = event.target.value
+const sum = () => {
 
-function changeEvent(event){
-    console.log("event===>",event.target.value)
+    let sum = Number(firstnum) + Number(secondnum);
+    result.innerText = sum
 }

@@ -1,3 +1,13 @@
-.hideShow{
-    display: none;
+.basic-design{
+    color: white;
+    background-color: red;
+}
+
+.advanced-design{
+    color:white;
+    background-color: olive;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
 }
