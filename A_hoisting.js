@@ -1,5 +1,15 @@
+"use strict"
+
+//const add = (a,b) =>  console.log(a + b)
+
+
 console.log(a)
-var a = 100;
+add(10,10)
+
+var a
+function add(a,b){
+    console.log(a +b)
+}
 
 
 
