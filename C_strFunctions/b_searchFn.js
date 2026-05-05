@@ -1,7 +1,8 @@
 let str = "Hello welcome to Javascript"
-let findText = "welcome"
+let findText = "JAvascript"
 
-let isAvailablestatus = str.includes(findText)             // true or false
-let index = str.indexOf(findText)                          // 6 or -1
+let isAvailablestatus = str.includes(findText)     // true        
+
+let index = str.indexOf(findText)                          
 
 console.log("index====>",index)

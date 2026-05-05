@@ -1,39 +1,52 @@
 let timeStamp = new Date();
 
+
+
+
 let year = timeStamp.getFullYear()
 let month = timeStamp.getMonth() + 1
 let currentDate = timeStamp.getDate()
+let expiredate  = currentDate + 10
+
 let day = timeStamp.getDay()
+
+
+let price = 1000
+let offerPrice = price
+if(currentDate > expiredate){
+    offerPrice = price - (price * 5 /100)
+}
+
+
+console.log("currentDate===>",currentDate+10)
+
+console.log("start")
 
 switch(day){
     case 0:
-        day = "Sunday"
+        console.log("Sunday")
         break;
     case 1:
-        day = "Monday"
+        console.log("Monday")
         break;
     case 2:
-        day = "TuesDay"
+         console.log("TuesDay")
         return 
     
      case 3:
         day = "wednesDay"
+        console.log("wednesDay")
         break; 
     
      case 4:
-        day = "Thursday"
+        console.log("Thursday")
+       
         break 
+    default:
+        console.log("holiday")
+        break;
 }
 
 
-
-console.log("current Date===>",currentDate)
-let offerDate = currentDate + 10
-
-console.log("offerDate Date===>",offerDate)
-
-if(currentDate < offerDate){
-    console.log("offer enable")
-}
 
 

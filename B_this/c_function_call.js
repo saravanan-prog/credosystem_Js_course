@@ -1,16 +1,13 @@
-let user = {
-    name : "saravanan",
-    age : 32,
-    work : "Software Engineer"
+
+let product = {
+    productname: "apple",
+    productPrice: 20
 }
 
-let userInfo = {
-    location:"velachery",
-    city:"chennai"
+function getProductDetails(manifactireUnit){
+    console.log("Product Name====>",this.productname)
+    console.log("Product Price====>",this.productPrice)
+    console.log("Mainfacture unit====>",manifactireUnit)
 }
 
-function clickMe(info){
-    console.log("user clicked===>",this.name,"age===>",this.age,"location====>",info.location)
-}
-
-clickMe.call(user,userInfo)
+getProductDetails.call(product,"himachala")
