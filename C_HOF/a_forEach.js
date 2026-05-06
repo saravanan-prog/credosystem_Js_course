@@ -1,12 +1,15 @@
 let number = [100,200,300,400,750]
 
-let sumofArr = 0
+let sum = 0
 
 number.forEach(
     (value,index,arr) => {
-        sumofArr += value
+       sum += value;
+        
     }
 )
 
-console.log("sumofArr===>",sumofArr)
+console.log("sum ====>",sum)
+
+
 
