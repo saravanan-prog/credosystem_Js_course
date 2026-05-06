@@ -6,21 +6,15 @@ let timeStamp = new Date();
 let year = timeStamp.getFullYear()
 let month = timeStamp.getMonth() + 1
 let currentDate = timeStamp.getDate()
-let expiredate  = currentDate + 10
+
 
 let day = timeStamp.getDay()
 
 
-let price = 1000
-let offerPrice = price
-if(currentDate > expiredate){
-    offerPrice = price - (price * 5 /100)
-}
-
 
 console.log("currentDate===>",currentDate+10)
 
-console.log("start")
+
 
 switch(day){
     case 0:
