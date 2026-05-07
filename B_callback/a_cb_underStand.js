@@ -1,29 +1,27 @@
 
-function getProduct(callback){
-    
-   let product = {}
+function greetings(name,treat,sayBye){
 
     setTimeout(()=>{
-        product ={
-            productId : 1,
-            productName :"apple",
-            prductPrice : 120
-        }
-        callback(product)
-       
-    },3000)
-    
+         console.log(`Hello ${name}`)
+         treat()
+         sayBye()
+    },1000)
+   
 }
 
-function discountOffer(product){
-    let offer = 50;
-    const { prductPrice } = product
-    let discountPrice = prductPrice - (prductPrice * offer/100)
-    product.prductPrice = discountPrice
-    console.log("offer method===>",product)
+function treat(){
+    console.log("Providing party")
 }
- getProduct(discountOffer)             // waiting pool
 
-       
+function sayBye(){
+    console.log("Good  Bye !!! ")
+}
+
+
+greetings("saravanan",treat,sayBye)
+
+
+
+
 
 

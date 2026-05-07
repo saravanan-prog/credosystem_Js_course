@@ -1,5 +1,7 @@
 function product() {
-  return new Promise((resolve, reject) => {
+
+
+  let promise =  new Promise((resolve, reject) => {
     setTimeout(() => {
       var product = {
         productId: 1,
@@ -10,6 +12,8 @@ function product() {
       resolve(product);
     }, 3000);
   });
+
+  return promise
 }
 
 function discountOffer(product) {
@@ -21,17 +25,25 @@ function discountOffer(product) {
   return Promise.resolve(product);
 }
 
+
+
 function couponcodeValidation(couponCode, product) {
   let day = new Date().getDay();
-  if (couponCode && day == 0) product.prductPrice = product.prductPrice - 10;
+  if (couponCode &&couponCode == "THUR10" && day == 4) 
+    product.prductPrice = product.prductPrice - 10;
 
-  console.log("product====>", product);
+  return Promise.resolve(product)
 }
 
-product()
-  .then((productList) =>
-    discountOffer(productList).then((discountProductList) =>
-      couponcodeValidation("SUN10", discountProductList),
-    ),
-  )
-  .catch((error) => console.error(error));
+
+
+product().then((productdata)=>{
+    discountOffer(productdata).then(
+      (discountProduct) => {
+           couponcodeValidation("THUR10",discountProduct).then(
+             (data) => console.log("final product Data===>",data)
+           )
+      }
+    )
+})
+.catch( error => console.log("product error"))
