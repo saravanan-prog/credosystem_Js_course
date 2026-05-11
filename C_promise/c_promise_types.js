@@ -1,6 +1,7 @@
 function product() {
-  
- return new Promise((resolve, reject) => {
+
+  let promise = new Promise((resolve, reject) => {
+
     setTimeout(() => {
       var product = {
         productId: 1,
@@ -10,24 +11,39 @@ function product() {
 
       resolve(product);
     }, 3000);
+
   });
+
+  return promise;
 }
 
 function discountOffer() {
-  
 
-  return Promise.resolve(25);
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      reject(25)
+    },500)
+  })
+
+  return promise
 }
 
 function couponcodeValidation() {
-  
-  return Promise.reject("SUN100")
+
+  return Promise.reject("no coupon available")
+}
+
+function customerOrder(data) {
+  console.log("customer start to buy the product", data)
 }
 
 
-Promise.allSettled(
-    [product(),discountOffer(),couponcodeValidation()]
+Promise.all(
+  [
+    product(),
+    discountOffer(),
+    couponcodeValidation()
+  ]
 ).then(
-    (data) => console.log(data)
-)
-.catch(e => console.error("error===>",e))
+  (data) => customerOrder(data)
+).catch(e => console.error("error===>", e))
