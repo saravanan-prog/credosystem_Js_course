@@ -1,6 +1,7 @@
 
 function formValidate(event){
     event.preventDefault();
+    console.log("form is submitted")
 
     const userName = document.getElementById("username").value;
     const usernameError = document.getElementById('username_error')

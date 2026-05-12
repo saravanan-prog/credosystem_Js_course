@@ -1,11 +1,13 @@
 
-const message = document.getElementById('welcome-msg').innerText
-const colorList = document.getElementsByClassName('colors')
-const tagSelector = document.getElementsByTagName("h5")
-
-const querySelectorById = document.querySelectorAll(".colors")
+const message       = document.getElementById('welcome-msg')
+const colorList     = document.getElementsByClassName('colors')
+const tagSelector   = document.getElementsByTagName("h5")
 
 
-console.log("message ====>",message)
+
+
+const selector   = document.querySelectorAll(".colors")
+
+console.log("selector ====>",selector)
 
 
