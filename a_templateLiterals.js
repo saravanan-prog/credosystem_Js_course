@@ -12,8 +12,8 @@ console.log(`candidateName====>${candidateName} candidateAge===>${candidateAge}`
 
 
 const data = `
-  hello
-  world
-` 
+   hello i am software Engineer
+   I have 10 yeras of exprience fullstack.
+`
 
 console.log(`data==>${data} `)
