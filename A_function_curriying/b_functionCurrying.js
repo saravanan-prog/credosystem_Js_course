@@ -13,24 +13,6 @@ function greetingsMessage(){
 
 }
 
-let getCandidateName =  greetingsMessage()
-let getFullname = getCandidateName()
-let greetMessage = getFullname()
+let result =  greetingsMessage()()()
 
 console.log("greetMessage=====>",greetMessage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
