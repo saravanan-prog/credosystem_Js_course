@@ -1,5 +1,4 @@
 
-const url = `https://fakestoreapi.com/users`
 
 
 
@@ -11,10 +10,11 @@ function handleSubmit() {
 
     //validation
 
+    
+    const url = `https://fakestoreapi.com/users`
     const payload  = {
-        "id": 0,
+       
         "username": username,
-        "email": username,
         "password": password
     }
 
@@ -38,12 +38,6 @@ function handleSubmit() {
 
 
 
-function fetchUsers() {
-
-  fetch('https://fakestoreapi.com/users/11')
-    .then(response => response.json())
-    .then(data => console.log("data====>",data));
-}
 
 
 
