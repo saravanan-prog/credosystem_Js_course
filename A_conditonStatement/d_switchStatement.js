@@ -1,15 +1,4 @@
-let mark = 70;
-let grade = null;
-
-if(mark >= 90)
-    grade = "A"
-else if(mark >= 85)
-    grade = "B"
-else if(mark >= 70)
-    grade = "C"
-else
-    grade = "F"
-
+var grade = "A"
 
 
 switch(grade){
