@@ -18,7 +18,7 @@
 
 /* Example 2*/
 
-const employee = {
+const employee =  {
     name : "saravanan",
     age : "28",
     location : "chennai",
