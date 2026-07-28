@@ -2,4 +2,4 @@ let user = {
    
 };
 
-console.log("user city====>",user?.address?.city);
+console.log("user city====>",user?.address?.temp);

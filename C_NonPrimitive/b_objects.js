@@ -1,4 +1,4 @@
-/* Example 1 - Simple object creation */
+/* Example 1 - Simple object creation - JSON [javascript object notaition] pattern  */
 
   let student = {
         "name" : "saravanan",
@@ -7,33 +7,34 @@
         "location":"chennai"
   }
 
-//   console.log("student Name ==>",student.name)
-//   console.log("student age===>",student.age)
-//   console.log("student school===>",student['school'])
+//   console.log("student name ====>",student.name)
+//   console.log("student school===>",student.age)
+//   console.log("student location====>",student.location)
 
 
 
 
 
-
-/* Example 2*/
+/* Example 2 - Embeded objects ***/
 
 const employee =  {
     name : "saravanan",
     age : "28",
     location : "chennai",
+    address: {
+        temp : "2nd cross st, 4th ave west chennai ",
+        parmanent : "Shivan kovil st, Tanjore"
+    },
     isWorking : true,
     salary : 52454.25,
     skillset : ["Java","python","react","angular"],
     yearofExp : {
-        "2022-2023" : "Comodo security solutions",
+        "2022-2023": "Comodo security solutions",
         "2025-2026" : "Tata consultancy services"
 
     }
 }
 
-console.log("employeee Name ======>",employee.name)   
-console.log("employeee skillset ======>",employee.skillset)       
-console.log("employeee main skill ======>",employee.skillset[2])
-console.log("employee total experience details====>",employee.yearofExp)
-console.log("current working status====>",employee.yearofExp["2025-2026"])
+console.log("candidate skilss set ====>",employee.skillset[2])
+console.log("canidate year of 2025 company name===>",employee.yearofExp["2025-2026"])
+

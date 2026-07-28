@@ -4,6 +4,7 @@
 var firstNumber = "100"
 var secondNumber = 50
 
-var result  = firstNumber - secondNumber;    // 100500
+var additionResult   = firstNumber + secondNumber;    // 100500
+var subractionResult = firstNumber - secondNumber;    // 50
 
 console.log(result)

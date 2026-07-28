@@ -5,8 +5,8 @@
      **/
     
     
-    let age = 53;
+    let age = 2;
 
-    let result = (age >= 18) ? "Adult" : "Minor";
+    let result = (age >= 18) ? "elgible" : "Not-Eligible"
     
     console.log(result);
