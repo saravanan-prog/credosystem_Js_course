@@ -2,8 +2,9 @@
 
 let text = "Hello welcome to Javascript world"
 
+
 for(let item in text){
-     // console.log("item====>",text.charAt(item))
+   console.log("item====>",text[item])
 }
 
 
@@ -21,10 +22,4 @@ for(let item in text){
 
 
 
-/* Example 2 : Array itteration */
 
-let fruits = ["apple","orage","grapes"]
-
-for(let item in fruits){
-    console.log("item===>",fruits.at(item) )
-}
