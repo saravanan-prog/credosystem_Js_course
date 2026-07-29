@@ -1,9 +1,19 @@
-console.log("candidateName ====>",candidateName)
-console.log("candidate Age ====>",candidateAge)
+function outer() {
+    
+    let count = 0;
 
+    function inner() {
+        count++;
+        console.log(count);
+    }
 
-var candidateName = "saravanan"
-var candidateAge  = 28 
+    return inner;
+}
 
+const counter = outer();
+
+counter(); // 1
+counter(); // 2
+counter(); // 3
 
 
