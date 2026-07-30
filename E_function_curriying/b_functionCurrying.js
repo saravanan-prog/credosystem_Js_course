@@ -15,4 +15,4 @@ function greetingsMessage(){
 
 let result =  greetingsMessage()()()
 
-console.log("greetMessage=====>",greetMessage)
+console.log("result=====>",result)

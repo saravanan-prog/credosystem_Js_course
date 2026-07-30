@@ -1,13 +1,10 @@
+function addition(firsNumber,secondNumber,thirdNumber){
 
-/* function Expression */
-
-const addition =  function(a,b){
-   
-    return a + b;
+    let sum =  firsNumber + secondNumber + thirdNumber
+    return sum
 }
 
-let additionResult = addition(10,20);
 
-console.log("additionResult===>",additionResult)
+let result = addition(100,500,200)
 
-
+console.log("result ===>",result)
