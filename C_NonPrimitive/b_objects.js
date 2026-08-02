@@ -3,13 +3,22 @@
   let student = {
         "name" : "saravanan",
         "age"  : 5,
-        "school":"dav matriculation",
+        "school" :"dav matriculation",
         "location":"chennai"
   }
 
 //   console.log("student name ====>",student.name)
 //   console.log("student school===>",student.age)
 //   console.log("student location====>",student.location)
+
+
+
+
+
+
+
+
+
 
 
 
@@ -34,7 +43,7 @@ const employee =  {
 
     }
 }
+console.log("Temporary Address ===>",employee.address.temp)
+console.log("Year of Experience 2022 to 2023 ===>",employee.yearofExp["2022-2023"])
 
-console.log("candidate skilss set ====>",employee.skillset[2])
-console.log("canidate year of 2025 company name===>",employee.yearofExp["2025-2026"])
 
