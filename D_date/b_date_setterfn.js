@@ -1,15 +1,15 @@
-let currentDate = new Date()
-let modifiedDate =  new Date(currentDate);
+let timeStamp = new Date()
+let modifiedTimestamp =  new Date(timeStamp);
 
-modifiedDate.setFullYear(2030)
-modifiedDate.setMonth(2)
-modifiedDate.setHours(10);
-modifiedDate.setMinutes(30);
-modifiedDate.setSeconds(45);
-modifiedDate.setMilliseconds(500);
-
-
+modifiedTimestamp.setFullYear(2030)
+modifiedTimestamp.setMonth(2)
+modifiedTimestamp.setHours(10);
+modifiedTimestamp.setMinutes(30);
+modifiedTimestamp.setSeconds(45);
+modifiedTimestamp.setMilliseconds(500);
 
 
-console.log("currentDate====>",currentDate)
-console.log("ModifiedDate====>",modifiedDate)
+
+
+console.log("timeStamp====>",timeStamp)
+console.log("modifiedTimestamp====>",modifiedTimestamp)

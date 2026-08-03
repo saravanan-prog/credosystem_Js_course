@@ -1,22 +1,27 @@
-let productPrice = 1000;
-let discount = 5;
+let productName = "Apple Product";
+let price = 25000;
+let discount = 8;
 
+let offerStart = new Date("2026-08-03");
+let offerEnd = new Date("2026-08-08");
 
-let offerPrice = productPrice - (productPrice * discount / 100);
-
-// Current date
 let today = new Date();
 
-// Offer expires after 3 days
-let expiryDate = new Date();
-expiryDate.setDate(today.getDate() + 3);
+// Check offer period
+if (today >= offerStart && today <= offerEnd) {
 
-// Check current date
-let currentDate = new Date();
+    let discountAmount = price * discount / 100;
+    let finalPrice = price - discountAmount;
 
-if (currentDate <= expiryDate) {
-    console.log("🔥 5% Offer Price: ₹" + offerPrice);
-    console.log("Offer valid until:", expiryDate.toDateString());
+    console.log("Product:", productName);
+    console.log("Original Price: ₹" + price);
+    console.log("Discount: " + discount + "%");
+    console.log("Discount Amount: ₹" + discountAmount);
+    console.log("Final Price: ₹" + finalPrice);
+
 } else {
-    console.log("Normal Price: ₹" + productPrice);
+
+    console.log("Offer is not available");
+    console.log("Product:", productName);
+    console.log("Price: ₹" + price);
 }

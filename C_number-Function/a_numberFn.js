@@ -1,10 +1,9 @@
-let number = 125.3456;
+let number = 10.2545852
 
-let fixed     = number.toFixed(2);  
-let precision = number.toPrecision(5)
+let fixed =  number.toFixed(3) // 10.255
+let precision = number.toPrecision(4) // 10.25
 
-console.log("Fixed====>",fixed) // 125.35
-console.log("precision====>",precision) // 125.35
-
+console.log("Fixed====>",fixed)
+console.log("precision===>",precision)
 
 
