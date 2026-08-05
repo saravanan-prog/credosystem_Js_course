@@ -12,10 +12,10 @@
 
     user.city = "Bangalore";           // add-value
     user.age = 28                      // update-value
-    delete user.isLoggedIn             // delete value
+    delete user.lastName             // delete value
     
     let name =  user.fullName()
  
-    console.log("name====>",name)
+    console.log("user====>",user)
 
     

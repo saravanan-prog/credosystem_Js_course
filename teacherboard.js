@@ -1,16 +1,11 @@
-let text1 = "act"
-let text2 = "cat"
- let result
-if(text1 && text2){
-    result = text1.split('').sort().join('') === text2.split('').sort().join('') ? "Anagram" : "Not-anagram"
-}
-else{
-    result = "Fill the text first"
-}
-
-console.log(result)
+let numbers = [10,20,30,40,5,35,25,15]
 
 
 
 
+const conditonResult = numbers.some((value,index,self)=>{
+   return value > 45
+} )
 
+console.log("numbers====>",numbers)
+console.log("conditonResult====>",conditonResult)
