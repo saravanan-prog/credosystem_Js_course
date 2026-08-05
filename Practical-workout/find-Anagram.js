@@ -9,8 +9,3 @@ else{
 }
 
 console.log(result)
-
-
-
-
-
