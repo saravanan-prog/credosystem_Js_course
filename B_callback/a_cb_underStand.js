@@ -1,10 +1,9 @@
 
-function greetings(name,treat,sayBye){
+function greetings(name){
 
     setTimeout(()=>{
-         console.log(`Hello ${name}`)
-         treat()
-         sayBye()
+        console.log(`Hello ${name}`)
+         
     },1000)
    
 }
@@ -18,7 +17,7 @@ function sayBye(){
 }
 
 
-greetings("saravanan",treat,sayBye)
+greetings("saravanan")
 
 
 
