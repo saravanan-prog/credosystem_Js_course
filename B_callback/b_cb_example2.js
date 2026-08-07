@@ -1,4 +1,4 @@
-function getProduct(discountOffer){
+function getProduct(callback){
     
    let product = {}
 
@@ -8,12 +8,10 @@ function getProduct(discountOffer){
             productName :"apple",
             prductPrice : 120
         }
-        
-        discountOffer(product)
-       
+        callback(product)
     },3000)
     
-    return product
+    //return product
 }
 
 function discountOffer(product){
@@ -24,4 +22,5 @@ function discountOffer(product){
     console.log("offer method===>",product)
 }
 
-getProduct(discountOffer)
+ getProduct(discountOffer)
+

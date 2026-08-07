@@ -1,13 +1,14 @@
 function printStatement(){
 
-   let str;
+   
 
    let promise = new Promise(
       (resolve,reject) => {
 
          setTimeout(()=>  {
-            str ="hi hello welcome to react Js world"
-            resolve(str)
+            let str1 ="hi hello welcome to react Js world"
+            let str2 = "Saravanan developer"
+            resolve(str1 +" " + str2)
          },6000)
 
       }
@@ -20,7 +21,7 @@ function printStatement(){
 
  printStatement()
    .then(
-      (data) => console.log("Full filled Block :::",data)
+      (data1,data2) => console.log("Full filled Block :::",data1)
    )
    .catch(
       error => console.log("error Block :::", error)

@@ -1,9 +1,10 @@
 
-function greetings(name){
+function greetings(name,callback1,callback2){
 
     setTimeout(()=>{
         console.log(`Hello ${name}`)
-         
+        callback1()
+        callback2()
     },1000)
    
 }
@@ -17,8 +18,7 @@ function sayBye(){
 }
 
 
-greetings("saravanan")
-
+greetings("saravanan",treat,sayBye)
 
 
 

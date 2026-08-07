@@ -1,4 +1,4 @@
-function getProduct(discountOffer,couponcodeValidation){
+function getProduct(callback1,callback2){
     
    let product = {}
 
@@ -8,7 +8,7 @@ function getProduct(discountOffer,couponcodeValidation){
             productName :"apple",
             prductPrice : 120
         }
-        discountOffer(product,couponcodeValidation)
+        callback1(product,callback2)
         
        
     },3000)
@@ -21,7 +21,7 @@ function discountOffer(product,callback){
     let discountPrice = prductPrice - (prductPrice * offer/100)
     product.prductPrice = discountPrice
 
-    couponcodeValidation("THUR10",product)
+    callback("THUR10",product)
     
 }
 

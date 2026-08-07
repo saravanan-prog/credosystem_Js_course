@@ -17,6 +17,13 @@ function product() {
   return promise;
 }
 
+
+
+
+
+
+
+
 function discountOffer() {
 
   let promise = new Promise((resolve, reject) => {
@@ -28,21 +35,36 @@ function discountOffer() {
   return promise
 }
 
-function couponcodeValidation() {
 
-  return Promise.reject("no coupon available")
+
+
+
+
+
+function couponcodeValidation() {
+ 
+  let promise = new Promise((resolve,reject) => {
+      setTimeout(()=>{
+        reject("validated error")
+      },4000)
+  })
+
+  return promise
 }
+
+
+
 
 function customerOrder(data) {
   console.log("customer start to buy the product", data)
 }
 
 
-Promise.all(
+Promise.any(
   [
-    product(),
-    discountOffer(),
-    couponcodeValidation()
+    product(),   //3000ms
+    discountOffer(), //0.5ms
+    couponcodeValidation() // ?
   ]
 ).then(
   (data) => customerOrder(data)
