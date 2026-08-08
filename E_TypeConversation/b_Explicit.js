@@ -5,7 +5,7 @@
 var firstNumber = "100"
 var secondNumber = "500"
 
-firstNumber = Number(firstNumber)
+firstNumber  =  Number(firstNumber)
 secondNumber = Number(secondNumber)
 
 var result  = firstNumber + secondNumber;    // 600
@@ -21,8 +21,8 @@ var result  = firstNumber + secondNumber;    // 600
 var firstNumber = 100
 var secondNumber = 500
 
-firstNumber = String(firstNumber)
-secondNumber = String(secondNumber)
+firstNumber  =  String(firstNumber)
+secondNumber =  String(secondNumber)
 
 var result  = firstNumber + secondNumber;    // 100500
 
@@ -33,7 +33,7 @@ var result  = firstNumber + secondNumber;    // 100500
 
 /* Example 3 : Boolean conversation */
 
-let productAvailable = 1
+let productAvailable = 0
 var result = Boolean(productAvailable)
 
 

@@ -1,9 +1,19 @@
 const a = 10;
 const b = 2;
 
-console.log("add ====>", a + b )
-console.log("sub ====>", a - b )
-console.log("mul ====>", a * b )
-console.log("sub ====>", a / b )
-console.log("mod ====>", a % b )
-console.log("power ====>", a ** b )
+const additonResult         = a + b;
+const subractionResult      = a - b;
+const multiplicationResult  = a * b
+const divisionResult        = a / b
+const modResult             = a % b
+const powerOfResult         = a ** b
+
+
+
+
+console.log("add ====>", additonResult)
+console.log("sub ====>", subractionResult)
+console.log("mul ====>", multiplicationResult)
+console.log("sub ====>", divisionResult )
+console.log("mod ====>", modResult )
+console.log("power ====>",powerOfResult )

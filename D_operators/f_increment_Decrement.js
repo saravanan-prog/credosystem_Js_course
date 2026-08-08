@@ -1,20 +1,19 @@
 
 /**
- * pre increment  => ++variable
- * post increment => varable++
- * pre decrement  => --variable
- * post decrement => variable--
+ * (i++) post increment / decrement  => first print, next calc
+ * (++i) pre increment  / decrement  => first calc , next print 
+
  **/
 
 let i = 3;
 
-console.log("i====>",i++)    // post-increment
-console.log("i=====>",i)
-console.log("i======>",++i)
-console.log("i======>",i)
-console.log("i======>",i--)
-console.log("i======>",--i)
-console.log("i=====>",i)
+console.log("i====>",i++)    //  -> 3
+console.log("i=====>",i)     //  -> 4
+console.log("i======>",++i)  //  -> 5
+console.log("i======>",i)    //  -> 5
+console.log("i======>",i--)  //  -> 5
+console.log("i======>",--i)  //  -> 3
+console.log("i=====>",i)     //  -> 3
 
 
 

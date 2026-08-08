@@ -1,11 +1,13 @@
 
 const fruits = ["apple","orange","grapes"]
 
-// const availableFruits = fruits   /* shallow copy - same memeory reference */
-const availableFruits = [...fruits] /* Deep copy - Spread operator(...) */
 
-availableFruits.push("gova")
-availableFruits.push("pineapple")
+const newFruits = [ ...fruits ]                        // Deep copy
+newFruits[3]  = "pineapple"
 
-console.log("Fruits====>",fruits)
-console.log("availableFruits====>",availableFruits)
+console.log("Fruits====>",fruits)                  
+console.log("New Fruits =====>", newFruits)
+
+
+
+

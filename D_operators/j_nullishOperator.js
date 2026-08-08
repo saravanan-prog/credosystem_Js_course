@@ -1,4 +1,5 @@
-var defaultCm = null ?? "Vijay";
+var defaultCm = null ?? "Elecection comission officer";
+defaultCm = "vijay" ?? "Elecection comission officer"
 
 console.log("candidate Name ====>",defaultCm)
 console.log("candidate Name length====>",defaultCm.length)
