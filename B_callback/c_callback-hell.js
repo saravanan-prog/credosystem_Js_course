@@ -34,7 +34,7 @@ function couponcodeValidation(couponCode,product){
     console.log("product====>",product)
 }
 
-  getProduct(discountOffer,couponcodeValidation)  // waiting pool
+getProduct(discountOffer,couponcodeValidation)  // waiting pool
 
 
 

@@ -1,7 +1,5 @@
 function printStatement(){
 
-   
-
    let promise = new Promise(
       (resolve,reject) => {
 
@@ -13,7 +11,6 @@ function printStatement(){
 
       }
    )
-
 
 
    return promise
