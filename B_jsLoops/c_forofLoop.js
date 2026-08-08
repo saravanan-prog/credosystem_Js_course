@@ -1,20 +1,10 @@
-let numbers = [10,20,30];
-
-for (let item of numbers) {
-    // console.log(item);                // itterate and returns to values -> 10 20 30
-}
+let text = "Hello welcome to Javascript world"
+let fruits = ["apple","orange","grapes","pineapple"]
 
 
-
-
-
-
-let text = "hello world"
-
-
-for(let item of text){
+for(let item of fruits){
   
-    console.log(item)            
+    console.log("item=====>",item)            
     
 }
 

@@ -1,11 +1,12 @@
 console.log("Program start")
 
-let age = 23;
+let age = 22;
 
 
-if (age >= 18) {
+if (age >= 18) 
     console.log("Adult");
-}
+
+
 
 
 

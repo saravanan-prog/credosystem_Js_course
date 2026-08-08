@@ -1,10 +1,11 @@
-/* Example 1 :  String itteration using in operator */
+
 
 let text = "Hello welcome to Javascript world"
+let fruits = ["apple","orange","grapes","pineapple"]
 
 
-for(let item in text){
-   console.log("item====>",text[item])
+for(let i in fruits){
+   console.log("i====>",fruits[i])            // IN => Returns to key  **example = ink bottle
 }
 
 

@@ -1,5 +1,5 @@
 var grade
-var mark = 7
+var mark = 97
 
 if(mark >= 90)
     grade = 'A'
@@ -7,6 +7,8 @@ else if(mark >= 75)
     grade = 'B'
 else if(mark >= 35)
     grade = 'C'
+else
+    grade = 'F'
 
 
 switch(grade){
