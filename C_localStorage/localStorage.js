@@ -9,7 +9,7 @@ function register(){
         "password": "Test@123"
     }
 
-    localStorage.setItem("userInfo",JSON.stringify(userInformation))
+    localStorage.setItem("user",JSON.stringify(userInformation))
 
 
 }
@@ -17,7 +17,8 @@ function register(){
 function viewData(){
 
    
-    let userData = localStorage.getItem("userInfo")
+    let userData = localStorage.getItem("user")
+
     userData = JSON.parse(userData)
 
     let content = `
@@ -32,7 +33,7 @@ function viewData(){
 
 function removeUser(){
     
-    localStorage.removeItem("userInfo")
+    localStorage.removeItem("user")
     htmlContainer.innerHTML =``
 }
 

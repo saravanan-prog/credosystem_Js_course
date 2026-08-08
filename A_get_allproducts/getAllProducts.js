@@ -14,23 +14,24 @@ async function apicall() {
 
   try {
     let response = await fetch(url, option)
-    let data = await response.json()
-    var tableView = `<table>
-    <tr>    
-        <th>title </th>
-        <th>price </th>
-        <th>image </th>
-    </tr>
-    ${data.map((value, index) => {
+    let data     = await response.json()
+    var tableView = `
+    <table>
+      <tr>    
+          <th>title </th>
+          <th>price </th>
+          <th>image </th>
+      </tr>
+      ${data.map((value) => {
 
-      return `
-        <tr>
-          <td> ${value?.title} </td>
-          <td>  ${value?.price} </td>
-          <td> <img src =${value?.image}  height=100 width=100 /> </td>
-        </tr>
-      
-      `
+        return `
+          <tr>
+            <td> ${value?.title} </td>
+            <td>  ${value?.price} </td>
+            <td> <img src =${value?.image}  height=100 width=100 /> </td>
+          </tr>
+        
+        `
     })}
     </table>
  `

@@ -5,18 +5,24 @@
 function handleSubmit() {
     event.preventDefault();
 
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+    var username = document.getElementById('username').value ; 
+    var password = document.getElementById('password').value;
+
+
 
     //validation
 
     
     const url = `https://fakestoreapi.com/users`
     const payload  = {
-       
+        "id": 0,
         "username": username,
+        "email":username,
         "password": password
     }
+
+
+    
 
     const option = {
         method : "POST",
@@ -25,6 +31,8 @@ function handleSubmit() {
         },
         body : JSON.stringify(payload)
     }
+
+    console.log("url====>",url,"option===>",option)
 
 
     fetch(url,option)
