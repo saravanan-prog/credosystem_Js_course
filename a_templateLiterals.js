@@ -1,19 +1,18 @@
-const candidateName = "saravanan"
-const candidateAge = 25
-const candidateQualification = "MCA"
 
-/* old method */
+const firstName = `Rajesh`
+const lastName  = `Kumar`
+const desigination  = `Engineer`
 
-console.log("candidateName====>",candidateName,"candidateAge===>",candidateAge,"candidateQualification==>",candidateQualification)
+const employee = `Employee name is ${firstName} ${lastName}
+    he is a ${desigination}
+   currently working from prashanth hospiltal `
 
-/* Template literals */
-
-console.log(`candidateName====>${candidateName} candidateAge===>${candidateAge}`)
+console.log(employee)
 
 
-const data = `
-   hello i am software Engineer
-   I have 10 yeras of exprience fullstack.
-`
+const  a = 100
+const  b = 50
 
-console.log(`data==>${data} `)
+console.log(`a====>${a}
+             b====>${b}
+             add ===> ${a + b}`)

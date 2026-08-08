@@ -1,17 +1,19 @@
-const arr = [ 100 ,500, 600]
-
-const [a,b,c,d=0] = arr
-
-
-
-
-
-//Example 2 
-
-const fruit = {
-    name : "apple"
+const user = {
+  name : "saravanan",
+  address:{
+    temp:"2nd cross st 4th ave west velachery",
+    permanent : "5th cross st, Tanjore"
+  }
 }
 
-const { name : fruitName} = fruit
+const {
+      name, 
+      address : {
+          temp,
+          permanent
+      }
+    } = user
 
-console.log(name)
+
+
+console.log(temp)
