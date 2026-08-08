@@ -1,9 +1,8 @@
-const element = document.querySelectorAll("#welcome-msg")
+const element1 = document.getElementById("content1")
 
-element[0].innerText = "mohamed"
-element[1].innerText = "Saravanan"
+console.log("element====>",element1)
 
-console.log("element====>",element[1].innerText)
+
 
 
 

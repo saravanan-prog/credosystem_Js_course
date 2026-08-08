@@ -1,33 +1,28 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Page Title</title>
-    <link rel='stylesheet' href='./index.css'>
+  <title> Form Validatio </title>
 </head>
 <body>
     
     <form novalidate onsubmit="formValidate(event)"> 
         
         <div>
-            <label for="username">Mobile Number <span style="color:red">*</span></label>
-            <input type="text" id="username" name="username" required     >
+            <label for="username"> 
+                <span>Enter user name </span>
+                <span style="color:red">*</span>
+            </label>
+            <input type="text" id="username" name="username" required>
             <div id="username_error" style="color:red"></div>
         </div>
 
-        <div>
-            <label for="password">Password <span style="color:red">*</span></label>
-            <input type="password" id="password" name="password" required     >
-            <div id="password_error" style="color:red"></div>
-        </div>
         <div>
             <button type="submit">Register</button>
         </div>
     </form>
 
 
-<script src="./index.js"></script>
+    <script src="./index.js"></script>
 
 </body>
 </html>

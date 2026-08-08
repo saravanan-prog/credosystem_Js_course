@@ -1,17 +1,11 @@
 
-function btnClick(){
+function buttonOneEvent(){
     console.log("button1 is clicked")
 }
 
-
-
-
-
-
-const btn = document.querySelector('#button2')
-
-btn.addEventListener("click",()=>{
-    console.log("button2 is clicked")
+const buttonElement = document.getElementById("button2")
+buttonElement.addEventListener("click",()=>{
+    console.log("Button2 is clicked")
 })
 
 
@@ -19,8 +13,6 @@ btn.addEventListener("click",()=>{
 
 
 
-const input = document.querySelector('input')
-input.addEventListener("change",(event)=>{
-    console.log(event.target.value)
-})
+
+
 
