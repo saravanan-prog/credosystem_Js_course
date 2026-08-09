@@ -1,10 +1,19 @@
 let str = "Hello Javascript welcome to React world"
-let findText = "Javascript"
+let findText = "o"
 
-let isAvailablestatus = str.includes(findText)     // returns to boolean        
-let index = str.indexOf(findText)                  // returns to index position        
-let findLastIndex = str.lastIndexOf(findText)          
+let availableText     = str.includes(findText)
+let isAvailablestatus = str.indexOf(findText)  
 
-console.log("isAvailablestatus===>",isAvailablestatus)
-console.log("index====>",index)
-console.log("findLastIndex====>",findLastIndex)
+
+console.log("isAvailablestatus=====>",isAvailablestatus)
+
+
+
+
+
+
+
+
+
+    
+

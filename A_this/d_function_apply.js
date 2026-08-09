@@ -4,10 +4,16 @@ let product = {
     productPrice: 20
 }
 
-function getProductDetails(manifactireUnit){
-    console.log("Product Name====>",this.productname)
-    console.log("Product Price====>",this.productPrice)
-    console.log("Mainfacture unit====>",manifactireUnit)
+let employee = {
+    empId: 1,
+    empName : "saravanan",
+    age: 25
 }
 
-getProductDetails.apply(product,["himachala"])
+function getProductDetails(employeeInfo){
+    console.log("Product Name====>",this.productname)
+    console.log("Product Price====>",this.productPrice)
+    console.log("Emp Id ====>",employeeInfo.empId)
+}
+
+getProductDetails.apply(product,[employee])

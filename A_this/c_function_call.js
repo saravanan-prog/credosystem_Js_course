@@ -1,9 +1,8 @@
 
-function getProductDetails(manifactireUnit){
+function getProductDetails(canidateName){
 
     console.log("Product Name====>",this.productname)
-    console.log("Product Price====>",this.productPrice)
-    console.log("Mainfacture unit====>",manifactireUnit)
+    console.log("Product Price====>",this.productPrice)  
 }
 
 
@@ -13,4 +12,4 @@ let product = {
     productPrice: 20
 }
 
-getProductDetails.call(product,"himachala")
+getProductDetails.call(product,"saravanan")

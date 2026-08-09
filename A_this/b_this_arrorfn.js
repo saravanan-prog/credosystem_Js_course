@@ -1,6 +1,6 @@
 
 this.employee_firstName = "Rajesh"
-this.employee_lastName = "Kumar";
+this.employee_lastName  = "Kumar";
 
 const employee = {
     empid : 121,
@@ -10,6 +10,6 @@ const employee = {
        
 }
 
-let result =  employee.employee_fullname(employee)
-console.log(result)
+let result =  employee.employee_fullname()
+console.log("employee Full Name ====>",result)
 
