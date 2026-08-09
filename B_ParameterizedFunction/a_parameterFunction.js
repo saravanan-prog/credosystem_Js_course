@@ -1,10 +1,16 @@
+
+
+
+
+
 function addition(firsNumber,secondNumber,thirdNumber){
 
-    let sum =  firsNumber + secondNumber + thirdNumber
-    return sum
+    return  firsNumber + secondNumber + thirdNumber
+    
 }
 
 
 let result = addition(100,500,200)
 
 console.log("result ===>",result)
+
