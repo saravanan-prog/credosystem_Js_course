@@ -4,10 +4,12 @@ function addition(){
     let b = 5;
     let c = a + b;
     
-    return a
+    return c
 }
 
 let result = addition()
+
+console.log("result====>",result)
 
 
 
