@@ -12,7 +12,7 @@
 
     user.city = "Bangalore";           // add-value
     user.age = 28                      // update-value
-    delete user.lastName             // delete value
+    delete user.lastName              // delete value
     
     let name =  user.fullName()
  

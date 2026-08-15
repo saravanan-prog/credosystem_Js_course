@@ -7,6 +7,7 @@
 
 
  //reversal-pattern
+ 
  let newFruits = ["pinapple", "orange","grapes","zolo","apple"]
  newFruits.reverse()                                         
  console.log("reversal Pattern  =====>",newFruits)
