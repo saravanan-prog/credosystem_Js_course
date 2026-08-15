@@ -1,28 +1,18 @@
 
 
-
-
-function handleSubmit() {
-    event.preventDefault();
-
-    var username = document.getElementById('username').value ; 
-    var password = document.getElementById('password').value;
-
-
-
-    //validation
-
     
     const url = `https://fakestoreapi.com/users`
-    const payload  = {
+
+
+
+
+    const formData  = {
         "id": 0,
         "username": username,
         "email":username,
         "password": password
     }
 
-
-    
 
     const option = {
         method : "POST",
@@ -41,7 +31,7 @@ function handleSubmit() {
         .catch(error => console.error(err))
 
 
-}
+
 
 
 
