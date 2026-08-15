@@ -3,7 +3,7 @@ let price = 25000;
 let discount = 8;
 
 let offerStart = new Date("2026-08-03");
-let offerEnd = new Date("2026-08-08");
+let offerEnd   = new Date("2026-08-08");
 
 let today = new Date();
 

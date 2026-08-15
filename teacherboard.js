@@ -1,5 +1,5 @@
-let str  = "Hello world"
+let str = "Hello Saravanan"
 
+let result = str.toUpperCase().slice(6,15)
 
-
-console.log("Read the value ====>",str.toUpperCase())
+console.log("result===>",result)
