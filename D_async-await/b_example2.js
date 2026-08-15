@@ -1,6 +1,5 @@
 function getProduct(){
     
-  
 
    return new Promise((resolve,reject) => {
         setTimeout(()=>{
@@ -13,7 +12,6 @@ function getProduct(){
             resolve(product)
         
         },3000)
-
 
    })
 
