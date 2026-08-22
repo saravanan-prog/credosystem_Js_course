@@ -18,7 +18,7 @@ function getProduct(){
 
 function discountOffer(product){
     let offer = 50;
-    const { prductPrice } = product
+    const  prductPrice  = product.price
     let discountPrice = prductPrice - (prductPrice * offer/100)
     product.prductPrice = discountPrice
 
