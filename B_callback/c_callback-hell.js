@@ -21,13 +21,13 @@ function discountOffer(product,callback){
     let discountPrice = prductPrice - (prductPrice * offer/100)
     product.prductPrice = discountPrice
 
-    callback("THUR10",product)
+    callback("SATSAT",product)
     
 }
 
 function couponcodeValidation(couponCode,product){
     let day = new Date().getDay()
-    if(couponCode && couponCode == "THUR10" && day == 4)
+    if(couponCode && couponCode == "SATSAT" && day == 6)
         product.prductPrice = product.prductPrice - 10;
     
 

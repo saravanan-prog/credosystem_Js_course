@@ -1,16 +1,16 @@
 
-function greetings(name,callback1,callback2){
+function greetings(name,treat,sayBye){
 
     setTimeout(()=>{
-        console.log(`Hello ${name}`)
-        callback1()
-        callback2()
-    },1000)
+        console.log(`Hello Saravanan`) 
+        treat()
+        sayBye()
+    },6000)
    
 }
 
 function treat(){
-    console.log("Providing party")
+    console.log(" Dining hall party")
 }
 
 function sayBye(){
@@ -18,7 +18,11 @@ function sayBye(){
 }
 
 
-greetings("saravanan",treat,sayBye)
+greetings("Saravanan",treat,sayBye)
+
+
+
+
 
 
 

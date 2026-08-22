@@ -14,9 +14,6 @@ function getProduct(){
         },3000)
 
    })
-
-    
-    
 }
 
 function discountOffer(product){
@@ -52,7 +49,7 @@ async function mainFunction(){
         console.log("couponOffer====>",couponOffer)
     }
     catch(error) {
-        console.error(error)
+        console.error("error =====>",error)
     }
     
 }
