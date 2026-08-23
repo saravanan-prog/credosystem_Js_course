@@ -3,12 +3,15 @@ const user = {
   address:{
     temp:"2nd cross st 4th ave west velachery",
     permanent : "5th cross st, Tanjore"
-  }
+  },
+  salary:5000,
+  workLocation:"TCS-siruseri"
 }
 
 const {
     name,
-    address
+    address,
+    ...others
 } = user
 
 const { temp, permanent } = address
