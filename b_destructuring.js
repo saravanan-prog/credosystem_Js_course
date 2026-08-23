@@ -7,13 +7,17 @@ const user = {
 }
 
 const {
-      name, 
-      address : {
-          temp,
-          permanent
-      }
-    } = user
+    name,
+    address
+} = user
+
+const { temp, permanent } = address
+
+console.log("User name ====>", name)
+console.log("User address temp====>",temp )
+console.log("Permanagent address====>",permanent)
 
 
 
-console.log(temp)
+
+
