@@ -1,8 +1,7 @@
-const element1 = document.getElementById("content1")
 
-console.log("element====>",element1)
+const elements = document.querySelectorAll(".course-list")
 
-
+console.log("elements====>",elements[0].children)
 
 
 
