@@ -3,7 +3,7 @@ const htmlContainer = document.getElementById('data-info')
 function register(){
     
     const userInformation  = {
-        "id":0,
+       
         "username": "saravanan@gmail.com",
         "email": "saravanan@gmail.com",
         "password": "Test@123"
