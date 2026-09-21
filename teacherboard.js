@@ -1,13 +1,13 @@
+function  simpleProgram(){
+    var canidateName = "siva kumar"
 
-let x = null
-let y = 20
-let z = x + y
+    if(true){
+        var canidateAge = 28
+        console.log("canidate Name block inside ====>",canidateName)
+    }
+     
+    console.log("canidate Name block outside ====>",canidateName)
+    console.log("canidadate Age ====>",canidateAge)
+}
 
-console.log("z====>",z)
-
-/**
- *  '' (or) 0 (or) [] (or) {} => null
- * NaN = Not a number
- */
-
-
+simpleProgram()
