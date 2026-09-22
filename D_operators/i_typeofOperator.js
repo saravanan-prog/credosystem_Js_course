@@ -7,7 +7,8 @@ let result = 0;
 
 console.log("principal Amount====>",typeof principalAmount)
 console.log("employee Name   ====>",typeof employeeName)
-console.log("employee status   ====>",typeof isEmployeestatus)
+console.log("employee status   ====>",typeof loanStatus)
+console.log("employee status   ====>",typeof result)
 
 
 if(typeof principalAmount == "number" && typeof intrest == "number"){
@@ -16,4 +17,6 @@ if(typeof principalAmount == "number" && typeof intrest == "number"){
 else{
     result = Number(principalAmount) + Number(intrest)
 }
+
+console.log(result)
 
