@@ -1,6 +1,10 @@
-let produtAvailabe = true;
-let personliveStatus = false;
+function booleanType(){
 
-let kollamTrainStatus = false;
+    var produtAvailabe  = true;
+    var personliveStatus = false;
+    var kollamTrainStatus = false;
 
-console.log("product Available ===>",typeof produtAvailabe)
+    console.log("product Available ===>",typeof produtAvailabe)
+}
+
+booleanType()

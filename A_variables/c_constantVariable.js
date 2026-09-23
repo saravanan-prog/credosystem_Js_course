@@ -1,9 +1,12 @@
-function printTheStatement(){
+function constantVariables(){
+
   const database  = "Mysql"  
   const username  = "root"
   const passowrd  = "root"
   
-  
+  // database = "postgress"
+  // username = "test"
+  // password = "test"
                                                                                  
   console.log("database ====>",database)
   console.log("username ====>",username)
@@ -12,4 +15,4 @@ function printTheStatement(){
 
 }
 
-printTheStatement()
+constantVariables()

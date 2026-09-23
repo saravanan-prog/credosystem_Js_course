@@ -1,27 +1,11 @@
-/**
- *  Array =>  JavaScript arrays can hold different types of values.
- */
+function basicUnderStandArray() {
+  var fruits = ["apple", "ornage", "grapes", "pineapple", "lichi"];
 
-let fruits = ["apple","ornage","grapes","pineapple","lichi"]
-
-
-let salaryBasic = [5000,6000,7000,9000,8000]
-
-
-let personDetails = ["saravanan",27,"MCA",52000.25,"Tcs"]
-
-
-let vegtables = ["onion","cabage","bringal","cucumber"]
-
-
-console.log("vegtables =====>",vegtables[4])
-
-
-
-
-
-
-
-
-
-
+  console.log("Fruit of zero th key ===>", fruits[0]);
+  console.log("Fruit of first key ===>", fruits[1]);
+  console.log("Fruit of second key ===>", fruits[2]);
+  console.log("Fruit of third key ===>", fruits[3]);
+  console.log("Fruit of foruth key ===>", fruits[4]);
+  console.log("Fruit of fifth key ===>", fruits[5]);
+}
+basicUnderStandArray();

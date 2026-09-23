@@ -1,26 +1,17 @@
+function logicalOperators() {
+    
+  let candidateName = "saravanan";
+  let candidateAge = 29;
+  let canidadateLocation = "chennai";
+  let canidateAvailable = true;
+  let canidateSalary;
 
-/** 
- *    &&  Logical AND
- *    ||   Logical OR
- *    !    Logical Not
- * 
- * */ 
-   
-let a  = 50
-let b  = 40
+  let logicalAndResult = (candidateName == "ramesh") && (candidateAge == "25");
+  let logicalOrResult = ( candidateName == "saravanan") || (candidateAge == "25");
 
+  let notResultChecking = !canidateSalary
 
-let x = 100
-let y  = 100
+  console.log("notResultChecking===>", notResultChecking);
+}
 
-//                          T           F
-let logicalAndResult = ( a == b) && (x == y)  
-let logicalOrResult  = ( a == b) ||  (x == y) 
-
-let notResultChecking = !x ? "x is empty" : x
-
-console.log("notResultChecking===>",notResultChecking)
-
-
-
-
+logicalOperators()

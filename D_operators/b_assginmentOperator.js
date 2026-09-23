@@ -1,22 +1,19 @@
-let x = 10;
-console.log("x value is ====>",x)
+function assignmentOperators() {
+  var x = 10;
+  console.log("x value is ====>", x);
+  
+  x += 25;    /* addition assignment */
+  console.log("addition assignment====>", x); 
 
+  
+  x -= 10;   /* subraction assignment */
+  console.log("subraction assignment====>", x); 
 
-/* addition assignment */
-x += 25  
-console.log("addition assignment====>",x)          // 35
+  
+  x *= 2;    /* Multiplication assignment */
+  console.log("multiplication assignment====>", x); 
 
-/* subraction assignment */
-x -= 10
-console.log("subraction assignment====>",x)      // 25     
-
-/* Multiplication assignment */
-x *= 2
-console.log("multiplication assignment====>",x)   // 50
-
-/* division assignment */
-x /= 2
-console.log("multiplication assignment====>",x)  // 25 
-
-
-
+  
+  x /= 2;   /* division assignment */
+  console.log("multiplication assignment====>", x); 
+}

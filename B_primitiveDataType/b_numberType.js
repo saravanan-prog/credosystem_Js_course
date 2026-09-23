@@ -1,16 +1,12 @@
 
-/***
- *    Number Data type => it's comes to
- *                     => whole number or decimal  (possitve and negative)
- *                     
- */
+function numberDataType(){
 
+    let principalAmount = 1000;      // whole numbber
+    let intrestPerncentage = 7.5;    // Decimal number
+    let simpleInterest  = principalAmount * intrestPerncentage / 100;
+    let currentBalance = -500;
 
-let principalAmount = 1000;      // whole numbber
-let intrestPerncentage = 7.5;    // Decimal number
+    console.log("currentBalance ====>", typeof currentBalance)
+}
 
-let simpleInterest  = principalAmount * intrestPerncentage / 100;
-
-let currentBalance = -500;
-
-console.log("currentBalance ====>", currentBalance)
+numberDataType()

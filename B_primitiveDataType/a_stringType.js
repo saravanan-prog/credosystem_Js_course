@@ -1,25 +1,18 @@
-// String
-let candidateFirstName = "saravanan";
-let candidateLastName = "Durai";
-let initial = 'D'
+function stringDataType(){
+    var candidateFirstName = "saravanan";
+    var candidateLastName = "Durai";
+    var initial = 'D'
+    var firstNumber = "100";
+    var secondNumber = "200.45"
+    var productAvailabe = "true";
+    var data = "null";
+    var product = "undefined";
 
-// console.log("Initial===>", initial)
-// console.log( candidateFirstName +' '+ candidateLastName)
-
-
-
-
-let firstNumber = "100";
-let secondNumber = "200";
-
-//console.log(firstNumber + secondNumber)
+    console.log("candidate First Name Type ====>",typeof candidateFirstName)
 
 
- let productAvailabe = "true";
+}
 
- let data = "null";
- let product = "undefined";
-
-
+stringDataType()
 
 
