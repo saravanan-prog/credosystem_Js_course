@@ -1,17 +1,35 @@
-let fruits = ["apple","orange"]
+function addTheElementBackside(){
 
-fruits.push("pineapple")                  // ["apple","orange",pineapple]
-fruits.push("grapes")                     // ["apple","orange",pineapple,"grapes"]
-fruits.push("mango")                      // ["apple","orange",pineapple,"grapes","mango"]
+    var fruits = ["apple","orange"]
 
-// console.log("fruits=====>",fruits)   
+    fruits.push("pineapple")                  // ["apple","orange",pineapple]
+    fruits.push("grapes")                     // ["apple","orange",pineapple,"grapes"]
+    fruits.push("mango")                      // ["apple","orange",pineapple,"grapes","mango"]
 
+    return fruits
+}
 
+var result = addTheElementBackside()
+console.log("Push method Result ===>",result)
 
-let vegtable = ["onion","cabage"] 
-vegtable.unshift("tomoto")         //  ["tomoto","onion","cabage"]          
-vegtable.unshift("bringal")        //  ["bringal","tomoto","onion","cabage"]
+function addTheElementFrontSide(){
+
+    let vegtable = ["onion","cabage"] 
+    vegtable.unshift("tomoto")          //  ["tomoto","onion","cabage"]          
+    vegtable.unshift("bringal")         //  ["bringal","tomoto","onion","cabage"]
  
-// console.log("vegtable====>",vegtable)    
+    return vegtable    
+
+    
+}
+
+var result = addTheElementFrontSide()
+console.log("Pop method Result ===>",result)
+
+
+
+
+
+
 
 

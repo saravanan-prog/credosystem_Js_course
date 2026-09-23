@@ -1,7 +1,15 @@
-let fruits = ["apple","orange","grapes","pineapple","lichi","kiwi"]
 
-console.log("Fruits Availability checking indexof function ====>", fruits.indexOf("banana") ) 
+function searchThevalueinArray(){
 
-console.log("Fruits Availability checking Include function ====>", fruits.includes("pineapple") )  
+    let fruits = ["apple","orange","grapes","pineapple","lichi","kiwi"]
 
+    let elementIndex        = fruits.indexOf("grapes")   /* returns to current Index value */
+    let lastElementIndex    = fruits.lastIndexOf("pineapple")
+    let elementSearchResult = fruits.includes("grapes")  /* returns to True or false */
 
+    return elementIndex
+
+}
+
+let result = searchThevalueinArray()
+console.log("result===>",result)

@@ -1,19 +1,29 @@
 
+function removeanElementBackside(){
+    
+    var fruits = ["apple","orange","grapes","pineapple","lichi","kiwi"]
 
-let fruits = ["apple","orange","grapes","pineapple","lichi","kiwi"]
-fruits.pop()   // ["apple","orange","grapes","pineapple","lichi"]
-fruits.pop()   // ["apple","orange","grapes","pineapple"]
-fruits.pop()   // ["apple","orange","grapes"]
+    fruits.pop()   // ["apple","orange","grapes","pineapple","lichi"]
+    fruits.pop()   // ["apple","orange","grapes","pineapple"]
+    fruits.pop()   // ["apple","orange","grapes"]
 
-console.log("After poped Fruits ====>",fruits)
+    return fruits
+}
 
-
-
-let vegetable = ["onion","bringal","tomato","cabage","carrot"]
-vegetable.shift() // ["bringal","tomato","cabage","carrot"]
-vegetable.shift() // ["tomato","cabage","carrot"]
-vegetable.shift() // ["cabage","carrot"]
-
+var result = removeanElementBackside()
+console.log("pop method result ====>", result)
 
 
-console.log("vegetable shifted====>",vegetable)
+function removeAnElementFrontside(){
+
+    var vegetable = ["onion","bringal","tomato","cabage","carrot"]
+    vegetable.shift()       // ["bringal","tomato","cabage","carrot"]
+    vegetable.shift()       // ["tomato","cabage","carrot"]
+    vegetable.shift()       // ["cabage","carrot"]
+
+    return vegetable
+}
+
+
+var result = removeAnElementFrontside()
+console.log("shift method result  =====>",result)
