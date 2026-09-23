@@ -1,20 +1,15 @@
-/**
- *  const -> block scope
- *        -> stands for constant
- *        -> restricted re-declare
- *        -> restricted re-assign
- */
+function printTheStatement(){
+  const database  = "Mysql"  
+  const username  = "root"
+  const passowrd  = "root"
+  
+  
+                                                                                 
+  console.log("database ====>",database)
+  console.log("username ====>",username)
+  console.log("passowrd ====>",passowrd)
 
 
+}
 
-const bottle = "oil";
-bottle = "water";
-
-const plasticCover = "chilliPowder";
-
-
-
-// Project - vise
-
-const dbUrl = "mysql://localhost:3306/mydb";
-const paymentUrl = "razorpay:9123@abl.com"
+printTheStatement()

@@ -1,13 +1,25 @@
-function  simpleProgram(){
-    var canidateName = "siva kumar"
+function printTheStatement(){
+    var canidateName = "Saravanan"
+    var candidateAge = 29
 
     if(true){
-        var canidateAge = 28
-        console.log("canidate Name block inside ====>",canidateName)
+
+        let candidateWorkLocation = "Banglore";
+        let canidateWorkPosition = "Manger";
+
+        console.log("True block inside candidateAge ===>",canidateName)
+        console.log("True block inside candidateAge ===>",candidateAge)
+
+        console.log("True block inside candidateWorkLocation ===>",candidateWorkLocation)
+        console.log("True block inside canidateWorkPosition ===>",canidateWorkPosition)
     }
-     
-    console.log("canidate Name block outside ====>",canidateName)
-    console.log("canidadate Age ====>",canidateAge)
+
+    console.log("True block outside candidateAge ===>",canidateName)
+    console.log("True block outside candidateAge ===>",candidateAge)
+
+    console.log("True block outside candidateWorkLocation ===>",candidateWorkLocation)
+    console.log("True block outside candidateWorkLocation ===>",candidateWorkLocation)
+
 }
 
-simpleProgram()
+printTheStatement()

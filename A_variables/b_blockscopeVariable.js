@@ -1,13 +1,16 @@
-/**
- *  let - block scope
- *      - cannot re-declare
- *      - but allow re-assign
- */
 
+function printTheStatement(){
+  let bottle = "oil"  
+  bottle = "water"       /* re-assigment allowed but re-declare not possible */
+  if(true) {
+    let tiffinBox = "Chicken Biriyani"
+    console.log("block inside bottle ====>",bottle)
+    console.log("tiffinBox ====>",tiffinBox)
+  }
+                                                                                 
+  console.log("block outside bottle ====>",bottle)
+  console.log("tiffinBox ====>",tiffinBox)
 
-let bottle = "water"
+}
 
-bottle = "oil" 
-
-
-console.log("bottle===>",bottle)
+printTheStatement()
