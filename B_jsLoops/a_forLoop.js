@@ -1,36 +1,33 @@
 
-/* for( Assignment; Testcondition; increment){
+/* for( Assignment; Testcondition; increment / Decrement ){
       block
  } **/
 
 
 
-/* Example 1 - print the number 1 to 25*/
-
-for(let i = 1; i <= 25; i++){ 
-     
-    console.log("i===>",i)
-     
+function basicForloopunderstand(){
+    
+    for(let i = 1; i <= 25; i++){ 
+        
+        console.log("i===>",i)
+        
+    }
 }
 
 
-/* Example 2 - wirte a 5th table program */
+/* Example 2 Read array */
 
-for(let i = 1; i <= 25; i++){ 
+function printFruitlist(){
 
-    console.log(i,"*5= ", i*5 )
-     
+    let fruits = ["apple","orange","grapes","pineapple","kiwi","lichi"]
+
+    for(let i=0; i < fruits.length; i++){
+        console.log("fruits====>",fruits[i])
+    }
+
 }
 
-
-/* Example 3 Read array */
-
-let fruits = ["apple","orange","grapes","pineapple"]
-
-for(let i=0; i< 4; i++){
-     console.log("fruits====>",fruits[i])
-}
-
+printFruitlist()
 
 
 

@@ -1,13 +1,14 @@
 console.log("Program start")
 
-let age = 22;
+let age = 25;
 
 
-if (age >= 18) 
-    console.log("Adult");
+if (age >= 18) {
+    console.log("Elgible Status====> Adult");
+    console.log("AdultAge ===>",age)
+}
+    
 
-
-
-
+    
 
 console.log("Program End")

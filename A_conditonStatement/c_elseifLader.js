@@ -1,4 +1,4 @@
-  let marks = 5;
+  let marks = 35;
 
     if (marks >= 90) {
         console.log("A");
