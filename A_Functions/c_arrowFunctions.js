@@ -1,20 +1,19 @@
 /* Example 1 */
-const addition = () => {
 
-    let a = 100
-    let b = 200
-    let c = a + b
-    return c
-}
 
-const additionResult = addition()
+const productAvailable = () => "Available"
+var result = productAvailable()
 
 
 
 
-/* Example 2 - simplified arrow function */
-const greetingMessage = () => "Hello welcome to Javascript world"
-const greetResult = greetingMessage()
+/* Example 2 */
+
+const getdetailedPrice = actualPrice => actualPrice + 500
+var result = getdetailedPrice(200)
+
+
+
 
 
 
@@ -22,15 +21,29 @@ const greetResult = greetingMessage()
 
 
 /* Example 3 */
+const arithmeticOperation = () => {
 
-const greetings = () => {
-    let str1 = "Hello"
-    let str2 = "Javascript"
-    let str3 = "World"
-    return str1 +" " + str2 + " " + str3
+    var firstNumber = 100
+    var secondNumber = 200
+    var sumofResult = firstNumber + secondNumber
+    return sumofResult
 }
 
-const result = greetings()
+var result = arithmeticOperation()
+
+console.log("additionResult result=====>",result)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

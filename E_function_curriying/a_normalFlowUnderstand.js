@@ -1,12 +1,12 @@
 function greetingsMessage(){
 
-    let candidateFirstname = "Saravanan"
-    let candidateLastname  = "Durai"
+    var candidateFirstname = "Saravanan"
+    var candidateLastname  = "Durai"
 
-    return function (){
-        let candidateFullname = candidateFirstname + candidateLastname
+    return  () => {
+        var candidateFullname = candidateFirstname + candidateLastname
 
-        return function(){
+        return () => {
             return "Hello " + candidateFullname + " !!!"
         }
     }

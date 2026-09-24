@@ -1,13 +1,15 @@
 
 /* function Expression */
 
-const addition =  function(){
-    let a = 10;
-    let b = 5
-    return a + b;
+const arithmeticOperation =  function(){
+
+    var firstNumber = 10;
+    let secondNumber = 5
+    
+    return firstNumber + secondNumber
 }
 
-let additionResult = addition();
+let additionResult = arithmeticOperation();
 
 console.log("additionResult===>",additionResult)
 

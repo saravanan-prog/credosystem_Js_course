@@ -1,12 +1,12 @@
 /* Example 1 - simple Arithmetic operation*/
 
-const arithmeticOperation   = (a,b) => {
+const arithmeticOperation   = (firstNumber,secondNumber) => {
 
-    let addResult = a + b
-    let subractionResult =  a - b
-    let multiplicationResult =  a * b
+    var addResult            =  firstNumber + secondNumber
+    var subractionResult     =  firstNumber - secondNumber
+    var multiplicationResult =  firstNumber * secondNumber
 
-    let resultData = {
+    var resultData = {
         "additionResult" : addResult,
         "subractionResult" : subractionResult,
         "multiplicationResult" : multiplicationResult
@@ -18,7 +18,11 @@ const arithmeticOperation   = (a,b) => {
 
 const result = arithmeticOperation(100,200)
 
-console.log("result ===>", result)
+console.log("Additon result ===>", result.additionResult)
+console.log("Subraction result ===>", result.subractionResult)
+console.log("Multiplication result ===>", result.multiplicationResult)
+
+
 
 
 

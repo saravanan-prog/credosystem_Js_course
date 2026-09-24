@@ -1,16 +1,14 @@
 
-
-
-
-
-function addition(firsNumber,secondNumber,thirdNumber){
-
-    return  firsNumber + secondNumber + thirdNumber
+function arithmeticOperation(firstNumber,secondNumber){
     
+    if((firstNumber !=undefined) && (secondNumber !=undefined) ){
+        var result = firstNumber +  secondNumber
+    }
+       
+
+
+    return result
 }
 
-
-let result = addition(100,500,200)
-
-console.log("result ===>",result)
-
+var result = arithmeticOperation(1000,2000)
+console.log("arithmetic Result ======>",result)

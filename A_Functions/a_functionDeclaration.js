@@ -1,16 +1,16 @@
+function arithmeticOperation(){
 
-function addition(){
-    let a = 10;
-    let b = 5;
-    let c = a + b;
-    
-    return c
+    var firstNumber  = 10;
+    var secondNumber = 10;
+    var result = firstNumber +  secondNumber
+
+
+    return result
 }
 
-let result = addition()
+var result = arithmeticOperation()
 
-console.log("result====>",result)
-
+console.log("result =====>",result)
 
 
 

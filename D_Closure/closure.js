@@ -1,6 +1,6 @@
 function outer() {
     
-    let count = 0;
+    var count = 0;
 
     function inner() {
         count++;
@@ -11,6 +11,8 @@ function outer() {
 }
 
 const counter = outer();
+
+console.log("counter ====>",counter)
 
 counter(); // 1
 counter(); // 2
