@@ -10,12 +10,12 @@ function simpleObject() {
   };
 
   console.log("student name ====>", student?.name);
-  console.log("student school===>", student?.age);
-  console.log("student location====>", student?.location);
+  console.log("student school===>", student.age);
+  console.log("student location====>", student.location);
 
 }
 
-// simpleObject()
+//simpleObject()
 
 
 
@@ -39,12 +39,11 @@ function complexObject() {
   };
 
 
-  console.log("Temporary Address ===>", employee?.yearofExp["2022-2023"]);
+  console.log("Temporary Address ===>", employee?.address?.temp);
 
   console.log(
-    "Year of Experience 2022 to 2023 ===>",
-    employee?.yearofExp["2022-2023"],
-  );
+    "Year of Experience 2022 to 2023 ===>", employee?.yearofExp["2022-2023"]);
 }
 
 
+complexObject()
