@@ -1,15 +1,19 @@
 
-function getProductDetails(canidateName){
+const user = { 
+    firstName: "Saravanan",
+    lastName : "Durai",
+    address : "2nd cross st, 4th ave west",
+    location : "velachery",
+    city     : "chennai",
+};
 
-    console.log("Product Name====>",this.productname)
-    console.log("Product Price====>",this.productPrice)  
-}
 
 
+    function show(salary) {
+      console.log("first Name =====>", this.firstName);
+      console.log("first Last name =====>", this.lastName);
+      console.log("Address Name =====>", this.address);
+      console.log("Employee Status====>",salary)
+    }
 
-let product = {
-    productname: "apple",
-    productPrice: 20
-}
-
-getProductDetails.call(product,"saravanan")
+    show.call(user,25000);   

@@ -1,19 +1,21 @@
 
-let product = {
-    productname: "apple",
-    productPrice: 20
-}
+const user = { 
+    firstName: "Saravanan",
+    lastName : "Durai",
+    address : "2nd cross st, 4th ave west",
+    location : "velachery",
+    city     : "chennai",
+};
 
-let employee = {
-    empId: 1,
-    empName : "saravanan",
-    age: 25
-}
 
-function getProductDetails(employeeInfo){
-    console.log("Product Name====>",this.productname)
-    console.log("Product Price====>",this.productPrice)
-    console.log("Emp Id ====>",employeeInfo.empId)
-}
 
-getProductDetails.apply(product,[employee])
+    function show(status,salary) {
+        console.log("first Name =====>", this.firstName);
+        console.log("first Last name =====>", this.lastName);
+        console.log("Address Name =====>", this.address);
+        console.log("Employee Status====>",status)
+        console.log("Employee Salary====>",salary)
+
+    }
+
+    show.apply(user,["active",25000]);
