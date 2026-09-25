@@ -8,7 +8,11 @@ function stringDataType(){
     var data = "null";
     var product = "undefined";
 
-    console.log("candidate First Name Type ====>",typeof candidateFirstName)
+    var result = firstNumber + secondNumber
+
+    console.log("candidate First Name  ====>", candidateFirstName)
+    console.log("candidate First Name  type checking ====>",typeof candidateFirstName)
+
 
 
 }

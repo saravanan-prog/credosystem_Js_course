@@ -7,22 +7,32 @@ function undefinedType(){
     var candidateAge;
     var candidateCourse;
 
-    console.log("canidate name ===>",canidatename)
+    var result =  canidatename + "true";
+
+    console.log("canidate name ===>", canidatename)
     console.log("candidate Age ===>",canidatename)
     console.log("candidate Course ===>",candidateCourse)
+    console.log("result ===>",result)
+
 
 }
 
-undefinedType()
+// undefinedType()
 
 /* Null Data type */
 function nullType(){
     
     var canidatename = null;
     var candidateAge = null;
-    var candidateCourse = null;
+    var candidateCourse = null; 
+
+    var result = canidatename + 1000;
 
     console.log("canidate name ===>",canidatename)
     console.log("candidate Age ===>",canidatename)
     console.log("candidate Course ===>",candidateCourse)
+    console.log("result ===>",result)
+
 }
+
+nullType()

@@ -1,16 +1,18 @@
 /* Example 1 - Simple object creation - JSON [javascript object notaition] pattern  */
 
 function simpleObject() {
-  let student = {
+
+  var student = {
     name: "saravanan",
     age: 5,
     school: "dav matriculation",
     location: "chennai",
   };
 
-  console.log("student name ====>", student.name);
-  console.log("student school===>", student.age);
-  console.log("student location====>", student.location);
+  console.log("student name ====>", student?.name);
+  console.log("student school===>", student?.age);
+  console.log("student location====>", student?.location);
+
 }
 
 // simpleObject()
@@ -37,11 +39,11 @@ function complexObject() {
   };
 
 
-  console.log("Temporary Address ===>", employee.address.temp);
+  console.log("Temporary Address ===>", employee?.yearofExp["2022-2023"]);
 
   console.log(
     "Year of Experience 2022 to 2023 ===>",
-    employee.yearofExp["2022-2023"],
+    employee?.yearofExp["2022-2023"],
   );
 }
 

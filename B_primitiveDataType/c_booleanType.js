@@ -1,10 +1,12 @@
 function booleanType(){
 
-    var produtAvailabe  = true;
-    var personliveStatus = false;
+    var produtAvailabe  = true;                          // 1
+    var personliveStatus = false;                        // 0
     var kollamTrainStatus = false;
 
-    console.log("product Available ===>",typeof produtAvailabe)
+    var result = produtAvailabe + personliveStatus     
+
+    console.log("kollamTrainStatus  ===>",typeof kollamTrainStatus)
 }
 
 booleanType()

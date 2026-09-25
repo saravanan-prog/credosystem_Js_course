@@ -4,7 +4,7 @@ const employees = [
         age : "28",
         location : "chennai",
         address: {
-            temp : "2nd cross st, 4th ave west chennai ",
+            temp : "kanniyaman st, west mabalam  ",
             parmanent : "Shivan kovil st, Tanjore"
         },
         isWorking : true,
@@ -17,7 +17,7 @@ const employees = [
         age : "25",
         location : "chennai",
         address: {
-            temp : "2nd cross st, 4th ave west chennai ",
+            temp : "pothys sillks behind rayapuram area ",
             parmanent : "Shivan kovil st, Tanjore"
         },
         isWorking : true,
@@ -38,4 +38,4 @@ const employees = [
     }
 ]
 
-console.log("employees------>",employees[1].address.temp)
+console.log("employees------>",employees[3]?.address?.temp)

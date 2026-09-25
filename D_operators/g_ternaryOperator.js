@@ -8,10 +8,12 @@
     const age = 2;
     const voterResult = (age >= 18) ? "elgible" : "Not-Eligible"
 
+    console.log("voterResult====>",voterResult)
+
 
     //Example 2
 
-    const studentMark = 15
+    const studentMark = 86
     const result = (studentMark > 90 ) ?
                     "First class"
                  :
