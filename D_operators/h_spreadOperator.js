@@ -1,13 +1,25 @@
+function shallowCopy(){
+    var fruits    = ["apple","orange","grapes","pineapple"]
+    var newFruits = fruits
 
-const fruits = ["apple","orange","grapes"]
+    newFruits[0] = "kiwi"
+    newFruits[1] = "lichi"
 
+    console.log("Orginial Fruits Array =====>",fruits)
+    console.log("New  Fruits Array =====>",newFruits)
+}
 
-const newFruits = [ ...fruits ]                        // Deep copy
-newFruits[3]  = "pineapple"
+//shallowCopy()
 
-console.log("Fruits====>",fruits)                  
-console.log("New Fruits =====>", newFruits)
+function deepCopy_spreadOperator(){
+    var fruits    = ["apple","orange","grapes","pineapple"]
+    var newFruits = [...fruits]   /* Spread Operator (...) */                           
 
+    newFruits[0] = "kiwi"
+    newFruits[1] = "lichi"
 
+    console.log("Orginial Fruits Array =====>",fruits)
+    console.log("New  Fruits Array =====>",newFruits)
+}
 
-
+deepCopy_spreadOperator()

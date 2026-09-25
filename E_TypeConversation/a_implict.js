@@ -4,13 +4,11 @@
 var firstNumber = "100"
 var secondNumber = "50"
 
-var additionResult   = firstNumber + secondNumber;    // 100 + 500  = 100500
-var subractionResult = firstNumber - secondNumber;    // 100 - 50   = 50
+var additionResult   = firstNumber + secondNumber;    
+var subractionResult = firstNumber - secondNumber;    
 
-console.log("additionResult=====>",additionResult)
-console.log("subractionResult=====>",subractionResult)
-
-
+console.log("additionResult=====>",typeof additionResult)
+console.log("subractionResult=====>",typeof subractionResult)
 
 
 
@@ -24,13 +22,8 @@ console.log("subractionResult=====>",subractionResult)
 
 
 
-/* Example 2 */
 
-var x = null
-var y = 20
-var z = x + y
 
-console.log("z====>",z)   // 20
 
 
 

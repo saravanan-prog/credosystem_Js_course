@@ -1,14 +1,18 @@
 
 /* Example 1 : String to Number */
 
+function convertStringToNumber(){
+    var firstNumber = "100"
+    var secondNumber = "500"
 
-var firstNumber = "100"
-var secondNumber = "500"
+    firstNumber  =  Number(firstNumber)
+    secondNumber =  Number(secondNumber)
 
-firstNumber  =  Number(firstNumber)
-secondNumber = Number(secondNumber)
+    var result  = firstNumber + secondNumber;    // 600
+    console.log("result=====>",result)
+}
 
-var result  = firstNumber + secondNumber;    // 600
+// convertStringToNumber()
 
 
 
@@ -17,27 +21,34 @@ var result  = firstNumber + secondNumber;    // 600
 
 /* Example 2 : Number to String */
 
+function stringToNumber(){
+    
+    var firstNumber = 100
+    var secondNumber = 500
 
-var firstNumber = 100
-var secondNumber = 500
+    firstNumber  =  String(firstNumber)
+    secondNumber =  String(secondNumber)
 
-firstNumber  =  String(firstNumber)
-secondNumber =  String(secondNumber)
+    var result  = firstNumber * secondNumber;    
 
-var result  = firstNumber + secondNumber;    // 100500
+    console.log("result=====>",result)
 
-//console.log(result)
-
+}
+//stringToNumber()
 
 
 
 /* Example 3 : Boolean conversation */
+function NumberToBoolean(){
+    
+    var productAvailable = 0
+    var result = Boolean(productAvailable)
+    console.log("result=====>",result)
 
-let productAvailable = 0
-var result = Boolean(productAvailable)
+}
+NumberToBoolean()
 
 
-console.log(result)
 
 
 
