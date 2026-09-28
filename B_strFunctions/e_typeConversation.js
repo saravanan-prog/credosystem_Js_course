@@ -20,6 +20,6 @@ let splitStr2 = str2.split("-")
 
 
 let address = "2nd cross st, velachery, chennai 600042"
-let splitStr3 = address.split(" ")
+let splitStr3 = address.split(",")
 
-//console.log("splitStr3=====>",splitStr3)  
+console.log("splitStr3=====>",splitStr3)  
