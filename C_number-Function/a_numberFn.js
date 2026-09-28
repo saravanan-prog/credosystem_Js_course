@@ -1,9 +1,12 @@
-let number = 10.2545852
+var number = 10.2245852
 
-let fixed =  number.toFixed(3)         // 10.255   (after digit consider)
-let precision = number.toPrecision(4) // 10.25     (Before all value consider)
+var fixedResult = number.toFixed(3)   // 10.225
+var precissionResult = number.toPrecision(4)  // 10.23
 
-console.log("Fixed====>",fixed)
-console.log("precision===>",precision)
+
+console.log("fixedResult====>",fixedResult)
+console.log("precissionResult====>",precissionResult)
+
+
 
 
