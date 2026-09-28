@@ -3,12 +3,12 @@ console.log("Program start")
 let age = 1;
 
 if (age >= 18) {
-    console.log("Adult");
+    console.log("Adult");             /* True Block */     
 }
    
 else{
-    /* False Block */
-    console.log("Minor")
+   
+    console.log("Minor")              /* False Block */
 }
     
 

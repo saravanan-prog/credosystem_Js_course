@@ -1,10 +1,10 @@
-  let marks = 35;
+var marks = 200;
 
     if (marks >= 90) {
         console.log("A");
     } 
     else if (marks >= 70) {
-        console.log("B");
+        console.log("B");      
     } 
     else if(marks >=35){
         console.log("pass");
