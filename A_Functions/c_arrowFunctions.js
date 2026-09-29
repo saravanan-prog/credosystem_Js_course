@@ -7,6 +7,7 @@ var result = productAvailable()
 
 
 
+
 /* Example 2 */
 
 const getdetailedPrice = actualPrice => actualPrice + 500
@@ -14,6 +15,11 @@ var result = getdetailedPrice(200)
 
 
 
+const taxAmountCalculation = (actualPrice,taxPercentage) => actualPrice * taxPercentage / 100
+var result = taxAmountCalculation(50000,8)
+
+
+console.log("result====>",result)
 
 
 
@@ -31,7 +37,7 @@ const arithmeticOperation = () => {
 
 var result = arithmeticOperation()
 
-console.log("additionResult result=====>",result)
+
 
 
 

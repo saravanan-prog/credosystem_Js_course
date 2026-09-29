@@ -1,11 +1,7 @@
 
 function arithmeticOperation(firstNumber,secondNumber){
-    
-    if((firstNumber !=undefined) && (secondNumber !=undefined) ){
-        var result = firstNumber +  secondNumber
-    }
-       
 
+    var result = firstNumber +  secondNumber
 
     return result
 }

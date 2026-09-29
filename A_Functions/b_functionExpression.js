@@ -9,7 +9,7 @@ const arithmeticOperation =  function(){
     return firstNumber + secondNumber
 }
 
-let additionResult = arithmeticOperation();
+var additionResult = arithmeticOperation();
 
 console.log("additionResult===>",additionResult)
 

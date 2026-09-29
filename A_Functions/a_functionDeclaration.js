@@ -2,14 +2,12 @@ function arithmeticOperation(){
 
     var firstNumber  = 10;
     var secondNumber = 10;
-    var result = firstNumber +  secondNumber
-
-
-    return result
+    var sumofResult = firstNumber +  secondNumber
+   
+    return sumofResult
 }
 
 var result = arithmeticOperation()
-
 console.log("result =====>",result)
 
 
