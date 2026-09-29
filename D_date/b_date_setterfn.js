@@ -1,5 +1,5 @@
-let timeStamp = new Date()
-let modifiedTimestamp =  new Date(timeStamp);
+var currentTimeStamp = new Date()
+var modifiedTimestamp =  new Date(currentTimeStamp);
 
 modifiedTimestamp.setFullYear(2030)
 modifiedTimestamp.setMonth(0)
@@ -12,5 +12,5 @@ modifiedTimestamp.setMilliseconds(500);
 
 
 
-console.log("timeStamp====>",timeStamp)
+console.log("currentTimeStamp====>",currentTimeStamp)
 console.log("modifiedTimestamp====>",modifiedTimestamp)
