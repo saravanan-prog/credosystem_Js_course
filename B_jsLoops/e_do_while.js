@@ -1,7 +1,7 @@
-let i = 1;
+var i = 1;
 
 do{
-    console.log(i)
+    console.log("i=========>",i)
     i++
 } 
 while(i<=6);
