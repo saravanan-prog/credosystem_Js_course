@@ -10,6 +10,7 @@ const user = {
 
 
     function show(status,salary) {
+
         console.log("first Name =====>", this.firstName);
         console.log("first Last name =====>", this.lastName);
         console.log("Address Name =====>", this.address);
@@ -18,6 +19,6 @@ const user = {
 
     }
 
-    const newFunction = show.bind(user,"active",25000);
-
+    const newFunction =  show.bind(user,"active",25000);
     newFunction()
+  

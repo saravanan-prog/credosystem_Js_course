@@ -3,8 +3,8 @@ const employee = {
     employee_firstName : "saravanan",
     employee_lastName : "Durai",
 
-    employee_fullname : function(){
-        return this.employee_firstName + " " + this.employee_lastName
+    employee_fullname : function() {
+        return this.employee_firstName + " " + this.employee_lastName                  // Saravanan Durai
     }
 }
 
