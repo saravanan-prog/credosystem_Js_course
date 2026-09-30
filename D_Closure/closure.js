@@ -1,21 +1,22 @@
-function outer() {
+// Functional Clousre 
+
+
+function counterProgram() {
     
     var count = 0;
 
-    function inner() {
-        count++;
-        console.log(count);
+    function displayCount() {
+        count++;                               
+        console.log("count====>",count);
     }
 
-    return inner;
+    return displayCount;
 }
 
-const counter = outer();
+const innerFunction = counterProgram();
 
-console.log("counter ====>",counter)
-
-counter(); // 1
-counter(); // 2
-counter(); // 3
+innerFunction(); // 1
+innerFunction(); // 2
+innerFunction(); // 3
 
 

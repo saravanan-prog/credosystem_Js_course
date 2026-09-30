@@ -1,10 +1,12 @@
-function greetingsMessage(){
+/* Functinal Closure - Currying Technique  */
 
-    let candidateFirstname = "Saravanan"
-    let candidateLastname  = "Durai"
+function printTheGreetMessage(){
+
+    var candidateFirstname = "Saravanan"
+    var candidateLastname  = "Durai"
 
     return function (){
-        let candidateFullname = candidateFirstname + candidateLastname
+        var candidateFullname = candidateFirstname + " " + candidateLastname
 
         return function(){
             return "Hello " + candidateFullname + " !!!"
@@ -13,7 +15,6 @@ function greetingsMessage(){
 
 }
 
-let result =  greetingsMessage()()()
-
+const result =  printTheGreetMessage()()()
 
 console.log("result=====>",result)

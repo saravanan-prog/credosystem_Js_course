@@ -1,14 +1,21 @@
-const addition = () => {
+var a;
+var b;
 
-    let a = 100
-    let b = 200
-    let c = a + b
-
-    let data = [a,b,c]
-
-    return data
+function show(){
+   console.log("welcome")
 }
 
-let result = addition()
+console.log("a======>",a)   // undeifend
+console.log("b======>",b)   // undeifend
+show();
 
-console.log("result=====>",result)
+
+
+var a = 500;
+var b = 600;
+
+
+
+
+
+

@@ -1,21 +1,24 @@
+// Functional clousre 
+
 function greetingsMessage(){
 
     var candidateFirstname = "Saravanan"
     var candidateLastname  = "Durai"
 
-    return  () => {
-        var candidateFullname = candidateFirstname + candidateLastname
+    return function (){
 
-        return () => {
+        var candidateFullname = candidateFirstname + " " + candidateLastname
+
+        return function () {
             return "Hello " + candidateFullname + " !!!"
         }
     }
 
 }
 
-let getCandidateName =  greetingsMessage()
-let getFullname = getCandidateName()
-let greetMessage = getFullname()
+var greetingsMessageResult =  greetingsMessage()
+var result                 = greetingsMessageResult()
+var greetMessage           = result()
 
 console.log("greetMessage=====>",greetMessage)
 
