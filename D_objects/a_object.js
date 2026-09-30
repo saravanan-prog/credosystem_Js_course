@@ -14,8 +14,10 @@
     user.age = 28                      // update-value
     delete user.lastName              // delete value
     
-    let name =  user.fullName()
+    var fullname =  user.fullName()
  
     console.log("user====>",user)
+    console.log("fullname====>",fullname)
+
 
     

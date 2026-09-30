@@ -1,8 +1,9 @@
-let numbers = [10,20,30,40,5,35,25,15]
 
-let value = numbers.every((value,index,arr) => {
-      return value > 25
-})
 
-console.log("old Array=====>",numbers)
-console.log("value=====>",value)
+  var orignalArr = [100, 100, 200, 300, 300, 400, 750];
+
+  var result = orignalArr.every( value  => value >=300 )
+
+  console.log("orignalArr===>", orignalArr);
+  console.log("result===>", result);
+
