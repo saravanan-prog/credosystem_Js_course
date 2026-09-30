@@ -1,21 +1,16 @@
-var a;
-var b;
+'use strict'
 
-function show(){
-   console.log("welcome")
-}
+var a = 100
+var canidatename = "saravanan"
+var candidateAge = 25
 
-console.log("a======>",a)   // undeifend
-console.log("b======>",b)   // undeifend
-show();
+console.log(canidatename)
+console.log(candidateAge)
 
-
-
-var a = 500;
-var b = 600;
+apple()
 
 
-
+// let var const
 
 
 
