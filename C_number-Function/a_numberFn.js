@@ -1,11 +1,11 @@
-var number = 10.2245852
+var number = 10.2242852
 
-var fixedResult = number.toFixed(3)   // 10.225
-var precissionResult = number.toPrecision(4)  // 10.23
+var fixedResult = number.toFixed(3)   // 10.224
+
 
 
 console.log("fixedResult====>",fixedResult)
-console.log("precissionResult====>",precissionResult)
+
 
 
 

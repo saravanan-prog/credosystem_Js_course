@@ -1,25 +1,23 @@
-let str = "Hello World";
-let splitStr = str.split(""); 
-
-//console.log("splitStr====>",splitStr)
-
-let str1 = "Saravanan"
-let splitStr1 = str1.split("")
-
-//console.log("splitStr1=====>",splitStr1)  
+var str = "Hello World";
+var convertedArr = str.split(" "); 
 
 
 
+var str = "Saravanan"
+var convertedArr = str.split("")
 
-let str2 = "Saravanan-Durai-is-a-software-developer"
-let splitStr2 = str2.split("-")
+  
 
-//console.log("splitStr2====>",splitStr2)  
+
+var str = "Saravanan-Durai-is-a-software-developer"
+var convertedArr = str.split("-")
 
 
 
 
-let address = "2nd cross st, velachery, chennai 600042"
-let splitStr3 = address.split(",")
 
-console.log("splitStr3=====>",splitStr3)  
+var str = "2nd cross st, velachery, chennai 600042"
+var convertedArr = str.split(",")
+
+ 
+ console.log("convertedArr====>",convertedArr)

@@ -1,3 +1,3 @@
-let candidateName = "Hello saravanan"
+var candidateName = "Hello saravanan"
 
 console.log(candidateName.toLowerCase())

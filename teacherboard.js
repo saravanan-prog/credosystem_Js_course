@@ -1,7 +1,12 @@
 
-let number1 = 0.1                                            
-let number2 = 0.2
+var sampleString = "Hello My name is saravanan he is a software developer"
 
-var result = number1 + number2
+console.log("Origninal String====>",sampleString)
+console.log("Length====>", sampleString.length)
+console.log("uppecase====>",sampleString.toUpperCase())
+console.log("lowercase====>",sampleString.toLowerCase())
 
-console.log("result===>",result)
+console.log("find the text ====>",sampleString.includes("h"))
+
+console.log("find the Index ====>",sampleString.indexOf("is"))
+console.log("find the last Index ====>",sampleString.lastIndexOf("is"))

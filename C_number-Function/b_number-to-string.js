@@ -14,25 +14,16 @@ function numberToString(){
 // String to Number
 
 function stringToNumber(){
-    var number1 = "100pt"
-    var number2 = "100"
-    var result = parseInt(number1) + parseInt(number2) 
+    var avalilableSqft = "1800sqft"
+    var perSqft = "250 Rs"
+    var actualLandPrice  = parseInt(avalilableSqft) * parseInt(perSqft) 
 
-    console.log("result===>", result)
-
-}
-
-
-
-function nanChecking(){
-    var number1 = 100
-    var number2 = "100"
-    var result = isNaN(number2)
-
-    console.log("result===>", result)
+    console.log("actualLandPrice===>", actualLandPrice)
 
 }
-nanChecking()
+stringToNumber()
+
+
 
 
 

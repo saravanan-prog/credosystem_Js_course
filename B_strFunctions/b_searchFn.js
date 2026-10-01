@@ -1,13 +1,13 @@
-let str = "Hello Javascript welcome to React world"
-let findText = "o"
+var str = "Hello Javascript welcome to React world"
+var findText = "o"
 
-let availableText     = str.includes(findText)
-let isAvailablestatus = str.indexOf(findText)  
-
-
-console.log("isAvailablestatus=====>",isAvailablestatus)
+var availableText     = str.includes(findText)    // true
+var textPostion       = str.indexOf(findText)    // 4 
 
 
+console.log("textPostion =====>",textPostion)
+
+ 
 
 
 
