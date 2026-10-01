@@ -1,8 +1,8 @@
 
-function greetings(callback1,callback2){
+function greetings(canidateName,callback1,callback2){
 
     setTimeout(()=>{
-        console.log(`Hello Saravanan`) 
+        console.log(`Hello` + canidateName) 
         callback1(callback2)
         
        
@@ -25,7 +25,7 @@ function sayBye(){
 }
 
 
-greetings(treat,sayBye)
+greetings("Saravanan",treat,sayBye)
 
 
 
