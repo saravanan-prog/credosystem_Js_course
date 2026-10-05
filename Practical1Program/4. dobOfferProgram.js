@@ -20,5 +20,3 @@ if(currentMonth == customerBirthMonth){
 
 
 console.log(customerPurchasedItem)
-
-

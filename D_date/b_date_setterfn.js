@@ -1,5 +1,5 @@
-var currentTimeStamp = new Date()
-var modifiedTimestamp =  new Date(currentTimeStamp);
+const currentTimeStamp  =  new Date()
+const modifiedTimestamp =  new Date();
 
 modifiedTimestamp.setFullYear(2030)
 modifiedTimestamp.setMonth(0)
