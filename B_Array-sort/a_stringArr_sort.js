@@ -1,17 +1,23 @@
  // assending - pattern
+function assendingOrder(){
+    var candiateName = "saravanan"
+    var convetArr = candiateName.split("").sort();  
+    var convertTostr = convetArr.join("")                                            
+    console.log("convertTostr =====>",convertTostr)
+}
 
- let fruits = ["pinapple", "orange","grapes","zolo","apple"]
- fruits.sort();                                              
- console.log("assending Pattern =====>",fruits)
-
+assendingOrder()
 
 
  //reversal-pattern
  
- let newFruits = ["pinapple", "orange","grapes","zolo","apple"]
- newFruits.reverse()                                         
- console.log("reversal Pattern  =====>",newFruits)
-
+function reversalPattern(){
+    var newFruits = "saravanan"
+    var reversedStr = newFruits.split("").reverse()
+    var converTostr = reversedStr.join("")                                         
+    console.log("converTostr  =====>",converTostr)
+}
+reversalPattern()
 
 
 
