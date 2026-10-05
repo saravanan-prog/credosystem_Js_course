@@ -1,4 +1,5 @@
 function product() {
+
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       var product = {
@@ -10,6 +11,7 @@ function product() {
       resolve(product);
     }, 3000);
   });
+  
 }
 
 function discountOffer(product) {

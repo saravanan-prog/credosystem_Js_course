@@ -2,10 +2,9 @@
 function greetings(canidateName,callback1,callback2){
 
     setTimeout(()=>{
-        console.log(`Hello` + canidateName) 
-        callback1(callback2)
+        console.log(`Hello` +" " + canidateName)    
+        callback1(callback2)   // 
         
-       
     },6000)
    
 }
@@ -13,10 +12,8 @@ function greetings(canidateName,callback1,callback2){
 function treat(callback){
     setTimeout(() =>  {
         console.log(" Dining hall party")
-        callback()
-    
-    
-    } )
+        callback() //say bye
+    },500)
     
 }
 
@@ -26,8 +23,6 @@ function sayBye(){
 
 
 greetings("Saravanan",treat,sayBye)
-
-
 
 
 

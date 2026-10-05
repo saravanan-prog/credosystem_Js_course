@@ -1,12 +1,12 @@
 function printStatement(){
 
-   return new Promise(
+   var promise = new Promise(
       (resolve,reject) => {
          
          setTimeout(()=>  {
-           let str1 ="hi hello welcome to react Js world"
-           let str2 = "Saravanan developer"
-            resolve(str1 +" " + str2)
+            let str1 ="hi hello welcome to react Js world"
+            let str2 = "Saravanan developer"
+               resolve(str1 +" " + str2)
            
          },6000)
 
@@ -14,7 +14,7 @@ function printStatement(){
       }
    )
 
-
+   return promise
 }
 
  printStatement() 
