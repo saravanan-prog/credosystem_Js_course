@@ -1,9 +1,12 @@
 
+var numbersArray = [200,600,500,800,100,20,10]
 
-  var orignalArr = [100, 100, 200, 300, 300, 400, 750];
 
-  var result = orignalArr.every( value  => value >=300 )
+const result = numbersArray.reduce(          // acc = 2230
+    (acc,value,index,arr) => {
+        console.log("acc====>",acc)
+        return acc + value
+    },0)
 
-  console.log("orignalArr===>", orignalArr);
-  console.log("result===>", result);
 
+console.log("result======>",result)

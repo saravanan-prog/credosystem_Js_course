@@ -1,4 +1,4 @@
-let number = [5,5,25,4,4,8,8]
+var number = [5,5,25,4,4,8,8]
 
 
 // Remove a duplicate values

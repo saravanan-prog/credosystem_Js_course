@@ -1,15 +1,13 @@
-let number = [100,200,300,400,750]
+var numbersArray = [200,600,500,800,100,20,10]
+var count = 0
 
-let sum = 0
-
-number.forEach(
+const result = numbersArray.forEach(
     (value,index,arr) => {
-       sum += value;
-        
+        count += value
     }
 )
 
-console.log("sum ====>",sum)
+console.log("count========>",count)
 
 
 

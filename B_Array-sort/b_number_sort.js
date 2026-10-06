@@ -1,11 +1,28 @@
-// Assending Order pattern
+function assendigOrderValues(){
+    // Assending Order pattern
 
-const numbers= [100,50,25,200,80]
-const soretedArr = numbers.sort( (a,b) => a-b )
+    const numbers = [100,50,25,200,80]
+    const sortedArray = numbers.sort(
+        (a,b) => {
+            return a - b                           // Asending pattern
+        }
+    )
 
-console.log("assending Arr ====>",soretedArr)
+    console.log("sortedArray Arr ====>",sortedArray)
+}
+
+//assendigOrderValues()
+
+
+function desendingOrder(){
+    const numbers = [100,50,25,200,80]
+    const desendingPattern =  numbers.sort((a,b) => {
+        return b - a 
+    } )
+    console.log("desendingPattern Arr ====>",desendingPattern)  
+}
+
+desendingOrder()
                 
-// desendingOrdering Order pattern
 
-const desendingPattern =  numbers.sort((a,b) => b-a)
-console.log("desendingPattern Arr ====>",desendingPattern)
+

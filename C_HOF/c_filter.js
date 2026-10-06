@@ -27,7 +27,7 @@ function removeDuplicatevalues() {
 
   var transformArray = orignalArr.filter((value, index, arr) => {
 
-    return index === arr.indexOf(value)         // 4 === 3                        [100,200,300]
+    return index === arr.indexOf(value)         //  2 === 3             =>    [100]                   
 
   });
 

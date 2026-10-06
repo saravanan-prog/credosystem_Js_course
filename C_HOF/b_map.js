@@ -27,26 +27,30 @@ function transfromNewArrayMultiplyFive() {
 
 
 function addTitleNewnamelist() {
-  var personDetail = [
+
+  var passengerList = [
     {
-      name: "saravanan",
+      candidateName: "Saravanan Durai",
       gender: "M",
     },
     {
-      name: "Priya",
+      candidateName: "Priya",
       gender: "F",
-    },
+    }
   ];
 
-  var transformArray = personDetail.map((value) => {
+  var trainChatList =  passengerList.map((value) => {
 
     if (value.gender == "M") 
-        value.name = "Mr." + value.name;
+        value.candidateName = "Mr." + value.candidateName 
     else 
-        value.name = "Miss." + value.name;
+        value.candidateName = "Miss." + value.candidateName 
 
     return value;
   });
-  console.log("personDetail   ===>", personDetail);
-  console.log("transformArray  =====>", transformArray);
+
+
+
+  console.log("trainChatList  =====>", trainChatList);
 }
+addTitleNewnamelist()
