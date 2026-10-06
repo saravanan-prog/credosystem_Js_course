@@ -8,17 +8,29 @@ const user = {
   workLocation:"TCS-siruseri"
 }
 
-const {
-    name,
-    address,
-    ...others
-} = user
+const { name,
+        address:{
+          temp,
+          permanent
+        },
+        salary,
+        workLocation
+      } = user
+//const {temp,permanent} = address
 
-const { temp, permanent } = address
+console.log("user=========>",name)
+console.log("permanenet address =========>",permanent)
 
-console.log("User name ====>", name)
-console.log("User address temp====>",temp )
-console.log("Permanagent address====>",permanent)
+
+
+
+
+
+
+
+
+
+
 
 
 
