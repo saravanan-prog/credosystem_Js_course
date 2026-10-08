@@ -34,6 +34,6 @@ function viewData(){
 function removeUser(){
     
     localStorage.removeItem("user")
-    htmlContainer.innerHTML =``
+    htmlContainer.innerHTML =`Your Record has been deleted`
 }
 
