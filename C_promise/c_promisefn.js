@@ -1,8 +1,7 @@
 function product() {
-
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      var product = {
+      const product = {
         productId: 1,
         productName: "apple",
         prductPrice: 120,
@@ -11,16 +10,19 @@ function product() {
       resolve(product);
     }, 3000);
   });
-  
 }
 
 function discountOffer(product) {
-  let offer = 50;
-  const prductPrice  = product.price;
-  let discountPrice = prductPrice - (prductPrice * offer) / 100;
-  product.prductPrice = discountPrice;
+  var promise = new Promise((resolve, reject) => {
+    var offer = 50;
+    const prductPrice = product.price;
+    let discountPrice = prductPrice - (prductPrice * offer) / 100;
+    product.prductPrice = discountPrice;
 
-  return Promise.reject(product);
+    resolve(product);
+  });
+
+  return promise;
 }
 
 function couponcodeValidation(couponCode, product) {
@@ -36,9 +38,9 @@ product()
     discountOffer(productdata)
       .then((discountProduct) => {
         couponcodeValidation("THUR10", discountProduct)
-          .then((data) =>
-            console.log("final product Data===>", data),
-          );
-      });
+          .then((data) => console.log("final product Data===>", data))
+          .catch((couponError) => console.log("coupon Error"));
+      })
+      .catch((discountError) => console.log("Discount Error"));
   })
-  .catch((error) => console.log("product error"));
+  .catch((productError) => console.log("product error"));

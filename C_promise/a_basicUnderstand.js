@@ -14,11 +14,13 @@ var candidateName = new Promise(
 candidateName.then(
     (result) => {
         console.log("result========>",result)
+        
         console.log("fourth")
         console.log("fifth")
         console.log("six")
     }
 )
 .catch( (error) => console.log("error====>",error))
+
 
 

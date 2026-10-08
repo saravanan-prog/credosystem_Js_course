@@ -1,10 +1,28 @@
-'use strict'
+function foodOrder(){
 
-fruits = "apple"
-vegetable = "cabage"
 
-welcome = function(){
-  console.log("welcome to JS worl.d")
+    const OrderItem = new Promise(
+        (resolve,reject) => {
+            setTimeout(() => {
+            if(true){
+                resolve("Chicken Manchurian is ready")
+            }
+            else {
+                reject("Something went wrong.")
+            }
+            })
+            
+        }
+    )
+
+    return OrderItem
+
 }
 
-welcome()
+foodOrder()
+    .then ( 
+        (data) => console.log("Data=====>",data)
+    )
+    .catch(
+        (error) => console.log("error===>",error)
+    )

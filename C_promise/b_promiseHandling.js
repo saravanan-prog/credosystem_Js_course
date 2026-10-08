@@ -4,10 +4,9 @@ function printStatement(){
       (resolve,reject) => {
          
          setTimeout(()=>  {
-            let str1 ="hi hello welcome to react Js world"
-            let str2 = "Saravanan developer"
-               resolve(str1 +" " + str2)
-           
+            const str1 ="hi hello welcome to react Js world"
+            const str2 = "Saravanan developer"
+            resolve(str1 +" " + str2)
          },6000)
 
         
