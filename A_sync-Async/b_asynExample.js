@@ -5,12 +5,16 @@ console.log("third attempt")
 
 setTimeout(()=>{
     for(let i=0; i<1000000000; i++){}
-    console.log("For loop Execution done")
+    console.log("foruth attempt ")
+},500)
+
+setTimeout(()=>{
+    console.log("fifth attempt")
 },500)
 /* End */
 
 
 //Sync code
-console.log("fith Attempt")
 console.log("six Attempt")
-console.log("seven attempt")
+console.log("seven Attempt")
+console.log("eight attempt")
