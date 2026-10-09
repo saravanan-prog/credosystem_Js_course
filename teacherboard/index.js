@@ -29,9 +29,10 @@ var ourProduct = [
 
 function seachProduct(){
     const searchProduct = document.querySelector("#product").value
+    var result = document.querySelector("#result")
     const FilterArr = ourProduct.filter(value =>  value.category === searchProduct)
 
+    result.innerHTML = JSON.stringify(FilterArr)
 
-
-    console.log("FilterArr =======>",FilterArr)
+    
 }
