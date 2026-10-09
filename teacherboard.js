@@ -1,28 +1,23 @@
-function foodOrder(){
+function foodOrder() {
+  const OrderItem = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (false) {
+        resolve("Chicken Manchurian is ready");
+      } else {
+        reject("Something went wrong.");
+      }
+    });
+  });
 
-
-    const OrderItem = new Promise(
-        (resolve,reject) => {
-            setTimeout(() => {
-            if(true){
-                resolve("Chicken Manchurian is ready")
-            }
-            else {
-                reject("Something went wrong.")
-            }
-            })
-            
-        }
-    )
-
-    return OrderItem
-
+  return OrderItem;
 }
 
-foodOrder()
-    .then ( 
-        (data) => console.log("Data=====>",data)
-    )
-    .catch(
-        (error) => console.log("error===>",error)
-    )
+async function main() {
+  try {
+    var result = await foodOrder(); //blocked
+    console.log("Result==========>", result);
+  } catch (error) {
+    console.log("error=========>", error);
+  }
+}
+main();

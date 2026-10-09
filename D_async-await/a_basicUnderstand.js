@@ -1,7 +1,7 @@
 
 function printStatement(){
 
-   return new Promise(
+   var promise = new Promise(
       (resolve,reject) => {
 
          setTimeout(()=>  {
@@ -12,6 +12,7 @@ function printStatement(){
       }
    )
 
+   return promise
    
 }
 
@@ -19,8 +20,8 @@ function printStatement(){
 async function displayPrintStatement(){
 
    try{
-      let data = await printStatement()   // result waiting stage
-      console.log("data====>",data)
+      let data =  await printStatement()   
+      console.log("data====>",data) // Pending
       console.log("First")
       console.log("second")
       console.log("thrid")
