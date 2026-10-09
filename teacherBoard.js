@@ -1,15 +1,4 @@
-const user = {
-  name: "Saravanan",
-  skills: ["JS", "React"],
-  address:{
-    temp:"car st, velachery"
-  }
-};
-
-const { 
-    name, 
-    address : {temp},
-    skills:[firstskill,secondskill]
-} = user;
-
-console.log(temp); // JS
+console.log(undefined ?? "Default"); // "Default"
+console.log(null ?? "Default");      // "Default"
+console.log(false ?? "Default");     // false
+console.log("" ?? "Default");        // ""

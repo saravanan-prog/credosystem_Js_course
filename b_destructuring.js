@@ -1,25 +1,23 @@
-const user = {
-  name : "saravanan",
-  address:{
-    temp:"2nd cross st 4th ave west velachery",
-    permanent : "5th cross st, Tanjore"
-  },
-  salary:5000,
-  workLocation:"TCS-siruseri"
+const product = {
+  name : "apple",
+  qty  : 5,
+  price : 200,
+  availability : true
 }
 
-const { name,
-        address:{
-          temp,
-          permanent
-        },
-        salary,
-        workLocation
-      } = user
-//const {temp,permanent} = address
+  const {
+      name,
+      qty,
+      price,
+      availability 
+  } = product
 
-console.log("user=========>",name)
-console.log("permanenet address =========>",permanent)
+
+
+  console.log("Product Name ====>",name)
+  console.log("Product qty ====>",qty)
+  console.log("Product price ====>",price)
+  console.log("Product availability ====>",availability)
 
 
 
