@@ -5,7 +5,7 @@
 
  **/
 
-let i = 3;
+var i = 3;
 
 console.log("i====>",i++)           // 3
 console.log("i=====>",i)            // 4

@@ -1,6 +1,6 @@
 function shallowCopy(){
     var fruits    = ["apple","orange","grapes","pineapple"]
-    var newFruits = fruits
+    var newFruits = fruits  // shallow - copy
 
     newFruits[0] = "kiwi"
     newFruits[1] = "lichi"
@@ -10,6 +10,13 @@ function shallowCopy(){
 }
 
 //shallowCopy()
+
+
+
+
+
+
+
 
 function deepCopy_spreadOperator(){
     var fruits    = ["apple","orange","grapes","pineapple"]

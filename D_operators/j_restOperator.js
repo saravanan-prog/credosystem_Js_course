@@ -1,7 +1,8 @@
 function printNumbers(firstNumber,secondNumber,...rest){
+
     console.log("firstNumber====>",firstNumber)
     console.log("secondNumber====>",secondNumber)
-    console.log("rest====>",rest[6])
+    console.log("rest====>",rest)
 
 }
 

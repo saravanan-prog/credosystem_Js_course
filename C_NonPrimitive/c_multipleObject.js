@@ -1,11 +1,23 @@
-const employees = [
+const employees = [              
     {
         name : "saravanan",
         age : "28",
         location : "chennai",
         address: {
-            temp : "kanniyaman st, west mabalam  ",
-            parmanent : "Shivan kovil st, Tanjore"
+            temp : {
+                doorNumber:22,
+                streetName:"car st",
+                area:"velachery",
+                city:"chennai",
+                pincode:600042
+            },
+            parmanent : {
+                doorNumber:22,
+                streetName:"car st",
+                area:"velachery",
+                city:"chennai",
+                pincode:600042
+            },
         },
         isWorking : true,
         salary : 52454.25,
@@ -17,8 +29,20 @@ const employees = [
         age : "25",
         location : "chennai",
         address: {
-            temp : "pothys sillks behind rayapuram area ",
-            parmanent : "Shivan kovil st, Tanjore"
+            temp : {
+                doorNumber:22,
+                streetName:"car st",
+                area:"velachery",
+                city:"chennai",
+                pincode:600042
+            },
+            parmanent : {
+                doorNumber:22,
+                streetName:"car st",
+                area:"velachery",
+                city:"chennai",
+                pincode:600042
+            },
         },
         isWorking : true,
         salary : 30002.25,
@@ -30,12 +54,24 @@ const employees = [
         location : "chennai",
         isWorking : true,
         address: {
-            temp : "2nd cross st, 4th ave west chennai ",
-            parmanent : "Shivan kovil st, Tanjore"
+            temp : {
+                doorNumber:22,
+                streetName:"car st",
+                area:"velachery",
+                city:"chennai",
+                pincode:600042
+            },
+            parmanent : {
+                doorNumber:22,
+                streetName:"car st",
+                area:"velachery",
+                city:"chennai",
+                pincode:600042
+            },
         },
         salary : 30002.25,
         skillset : ["html","css","bs",".net","devops"]
     }
 ]
 
-console.log("employees------>",employees[3]?.address?.temp)
+console.log("Nisha house Temp Address Door Number====>",employees[1]?.address?.temp?.doorNumber)

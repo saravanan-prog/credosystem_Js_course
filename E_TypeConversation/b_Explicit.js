@@ -12,7 +12,7 @@ function convertStringToNumber(){
     console.log("result=====>",result)
 }
 
-// convertStringToNumber()
+ //convertStringToNumber()
 
 
 
@@ -29,7 +29,7 @@ function stringToNumber(){
     firstNumber  =  String(firstNumber)
     secondNumber =  String(secondNumber)
 
-    var result  = firstNumber * secondNumber;    
+    var result  = firstNumber * secondNumber;         //100500
 
     console.log("result=====>",result)
 
@@ -41,8 +41,8 @@ function stringToNumber(){
 /* Example 3 : Boolean conversation */
 function NumberToBoolean(){
     
-    var productAvailable = 0
-    var result = Boolean(productAvailable)
+    var trainnerStatus = 1
+    var result = Boolean(trainnerStatus)
     console.log("result=====>",result)
 
 }

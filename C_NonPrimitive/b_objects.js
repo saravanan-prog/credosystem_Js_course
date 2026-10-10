@@ -3,15 +3,16 @@
 function simpleObject() {
 
   var student = {
-    name: "saravanan",
-    age: 5,
-    school: "dav matriculation",
-    location: "chennai",
+    
+    "canidate-name": "saravanan",
+    "age": 5,
+    "school": "dav matriculation",
+    "location": "chennai",
   };
 
-  console.log("student name ====>", student?.name);
-  console.log("student school===>", student.age);
-  console.log("student location====>", student.location);
+  console.log("student name ====>", student["canidate-name"]);
+  console.log("student school===>", student?.age);
+  console.log("student location====>", student?.location);
 
 }
 
@@ -40,6 +41,8 @@ function complexObject() {
 
 
   console.log("Temporary Address ===>", employee?.address?.temp);
+
+  console.log("Employee Primary Skill ====>",employee?.skillset[2])
 
   console.log(
     "Year of Experience 2022 to 2023 ===>", employee?.yearofExp["2022-2023"]);

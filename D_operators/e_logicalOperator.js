@@ -1,14 +1,12 @@
 function logicalOperators() {
     
-  let candidateName = "saravanan";
-  let candidateAge = 29;
-  let canidadateLocation = "chennai";
-  let canidateAvailable = true;
-  let canidateSalary = 6000;
+  var candidateName = "saravanan";
+  var candidateAge = 29;
+  var canidateSalary = 2000;
 
-  let logicalAndResult = (candidateName == "ramesh" ) && (candidateAge == "25");
-  let logicalOrResult = ( candidateName == "saravanan") || (candidateAge == "25");
-  let notResultChecking = !canidateSalary
+  var logicalAndResult = (candidateName == "ramesh" ) && (candidateAge == "25");       // False
+  var logicalOrResult = ( candidateName == "saravanan") || (candidateAge == "25");     // True
+  var notResultChecking = !canidateSalary                                              // false
 
   console.log("logicalAndResult===>", logicalAndResult);
   console.log("logicalOrResult===>", logicalOrResult);
@@ -18,7 +16,5 @@ function logicalOperators() {
 }
 
 logicalOperators()
-
-
-// && logical AND  = all true | false
-// || logical OR   =  anone true 
+// && logical AND  = all    true otherwise false
+// || logical OR   =  anone  true => true

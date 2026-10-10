@@ -2,13 +2,15 @@
 
 
 var firstNumber = "100"
-var secondNumber = "50"
+var secondNumber = 100
 
-var additionResult   = firstNumber + secondNumber;    
-var subractionResult = firstNumber - secondNumber;    
+var additionResult       = firstNumber + secondNumber;    // 100100
+var subractionResult     = firstNumber - secondNumber;    // 0
+var multiplicationResult = firstNumber * secondNumber;    // 10000
 
-console.log("additionResult=====>",typeof additionResult)
-console.log("subractionResult=====>",typeof subractionResult)
+console.log("additionResult=====>", typeof additionResult)
+console.log("subractionResult=====>", typeof subractionResult)
+console.log("multiplicationResult=====>",typeof multiplicationResult)
 
 
 
