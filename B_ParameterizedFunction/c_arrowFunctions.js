@@ -1,6 +1,6 @@
 /* Example 1 - simple Arithmetic operation*/
 
-const arithmeticOperation   = (firstNumber,secondNumber) => {
+const arithmeticOperation   = (firstNumber,secondNumber) => {    /* Parameter : firstNumber, secondNumber */
 
     var addResult            =  firstNumber + secondNumber
     var subractionResult     =  firstNumber - secondNumber
@@ -16,17 +16,19 @@ const arithmeticOperation   = (firstNumber,secondNumber) => {
 }
 
 
-const result = arithmeticOperation(100,200)
+const arithemticResult = arithmeticOperation(100,200)                     /* Arugment : 100 200 */
 
-console.log("Additon result ===>", result.additionResult)
-console.log("Subraction result ===>", result.subractionResult)
-console.log("Multiplication result ===>", result.multiplicationResult)
+console.log("arithemticResult========>",arithemticResult)
 
 
 
 
+/* Example 2 -> Single Parameter function */
 
+const addTitleName = name => 'MR.' + name
+const result = addTitleName("saravanan")
 
+console.log("result========>",result)
 
 
 

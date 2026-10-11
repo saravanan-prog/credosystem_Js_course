@@ -1,3 +1,6 @@
+
+
+
 function arithmeticOperation(){
 
     var firstNumber  = 10;
@@ -9,6 +12,7 @@ function arithmeticOperation(){
 
 var result = arithmeticOperation()
 console.log("result =====>",result)
+
 
 
 

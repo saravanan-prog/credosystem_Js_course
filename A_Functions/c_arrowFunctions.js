@@ -1,43 +1,35 @@
+
 /* Example 1 */
 
-
-const productAvailable = () => "Available"
-var result = productAvailable()
-
-
-
+const productAvailable = () => {
+    return "Available"
+}
+var statusResult = productAvailable()
 
 
-/* Example 2 */
+/* Example 2 => In Short Form */
 
-const getdetailedPrice = actualPrice => actualPrice + 500
-var result = getdetailedPrice(200)
+const addition = () => 500 + 600 
+var additionResult = addition()
 
-
-
-const taxAmountCalculation = (actualPrice,taxPercentage) => actualPrice * taxPercentage / 100
-var result = taxAmountCalculation(50000,8)
-
-
-console.log("result====>",result)
+console.log("addition Result ====>",additionResult)
 
 
 
+/* Example  3*/
 
-
-
-/* Example 3 */
 const arithmeticOperation = () => {
-
     var firstNumber = 100
-    var secondNumber = 200
-    var sumofResult = firstNumber + secondNumber
-    return sumofResult
+    var secondNumber = 500
+    var result = firstNumber + secondNumber
+    return result
 }
 
-var result = arithmeticOperation()
+var arithmeticResult = arithmeticOperation()
 
 
+
+//console.log("Arithmetic Result =====>",arithmeticResult)
 
 
 
