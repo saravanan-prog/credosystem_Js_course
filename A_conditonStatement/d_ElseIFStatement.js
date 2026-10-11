@@ -1,4 +1,4 @@
-var marks = 200;
+var marks = 35;
 
     if (marks >= 90) {
         console.log("A");

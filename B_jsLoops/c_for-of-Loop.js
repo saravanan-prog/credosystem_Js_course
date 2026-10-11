@@ -1,13 +1,19 @@
+/* Example 1 - Read the string Values */
+
 function readStringChar(){
+
    var text = "Hello welcome to Javascript world"
 
    for(let value of text){
       console.log("value====>",value)            
    }
 }
+
 //readStringChar()
  
 
+
+/* Example 2 - Read the array values */
 function printFruitList(){
 
    var fruits = ["apple","orange","grapes","pineapple"]

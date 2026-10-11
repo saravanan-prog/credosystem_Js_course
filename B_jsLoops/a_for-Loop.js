@@ -1,19 +1,15 @@
 
-/* for( Assignment; Testcondition; increment / Decrement ){
-      block
- } **/
-
-
-
+/* Example -1 */
 function basicForloopunderstand(){
-    
-    for(let i = 1; i <= 10; i++){ 
-        
-        console.log("i===>",i)               // Print the 1 to 25 numbers
-    
-    }
+
+        /* Assign;  Test-cond; Inc / Dec */
+
+        for( let i = 1; i <= 10;  i++){ 
+            console.log("i===>",i)               /** Print the 1 to 10 numbers **/
+        }
 }
-//basicForloopunderstand()
+
+// basicForloopunderstand()
 
 
 
@@ -25,10 +21,10 @@ function basicForloopunderstand(){
 
 function printFruitlist(){
 
-    let fruits = ["apple","orange","grapes","pineapple","kiwi","lichi"]
+    var fruits = ["apple","orange","grapes","pineapple","kiwi","lichi"]
 
-    for(let i = 0; i <= 6; i++){
-        console.log("i===>",i,"fruits====>",fruits[i])
+    for(let key = 0; key <= 6; key++){
+        console.log("Key===>",key,"fruits====>",fruits[key])
     }
 
 }

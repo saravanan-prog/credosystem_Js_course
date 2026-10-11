@@ -1,22 +1,30 @@
+/* Example 1 - String Itteration */
+
 function readStringChar(){
 
    var text = "Hello welcome to Javascript world"
 
    for(let key in text){
-      console.log("keys====>",key,"====>text value===>",text[key])            // IN => Returns to key  **example = ink bottle
+      console.log("key ===>",key,"====> text value===>",text.charAt(key))            // IN => Returns to key  **example = ink bottle
    }
 
 }
 
-// readStringChar()
+//readStringChar()
  
+
+
+
+
+
+/* Example 2 - Array Itteration */
 
 function printFruitList(){
 
-   let fruits = ["apple","orange","grapes","pineapple"]
+   var fruits = ["apple","orange","grapes","pineapple"]
 
    for(let key in fruits){
-      console.log("Key====>",key,"Values====>",fruits[key])            // IN => Returns to key  **example = ink bottle
+      console.log("Key====>",key,"Array value====>",fruits[key])            // IN => Returns to key  **example = ink bottle
    }
 
 }
