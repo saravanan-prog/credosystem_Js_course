@@ -1,40 +1,24 @@
-const firstElement =  document.getElementById("first-element")
-firstElement.innerText              = "Hello Saravanan";
-firstElement.style.color            = "white";
-firstElement.style.backgroundColor  = "green";
-firstElement.style.fontSize         = "32px";
+function changeTitle(){
+    const title = document.querySelector("#title")
+    title.innerText = `Welcome to D-MART`
+}
 
+function changeTitlewithStyle(){
+    const title = document.querySelector("#title")
+    title.innerHTML = `
+        <div style='color:red;'>
+            <h3> Welcome to Grace super market </h3>
+        </div>
+    `
+}
 
+function changeTitlewithStyleviaClass(){
+    const title = document.querySelector("#title")
+    title.innerHTML = `Welcome to D-MART`
+    title.classList.add( "text-color")
+}
 
-
-const homeMenu     = document.getElementById("home")
-const aboutMenu    = document.getElementById("about")
-const contactMenu  = document.getElementById("contact")
-
-homeMenu.addEventListener("click",()=>{
-    aboutMenu.classList.remove("active")
-    contactMenu.classList.remove("active")
-    homeMenu.classList.add("active")
-})
-
-aboutMenu.addEventListener("click",()=>{
-    homeMenu.classList.remove("active")
-    contactMenu.classList.remove("active")
-    aboutMenu.classList.add("active")
-})
-
-contactMenu.addEventListener("click",()=>{
-    homeMenu.classList.remove("active")
-    aboutMenu.classList.remove("active")
-    contactMenu.classList.add("active")
-})
-
-
-
-
-
-
-
-
-
-
+function removeTheDesign(){
+    const title = document.querySelector("#title")
+    title.classList.remove( "text-color")
+}

@@ -4,22 +4,22 @@
   <title> Form Validatio </title>
 </head>
 <body>
-    
-    <form novalidate onsubmit="formValidate(event)"> 
-        
+     
+    <form onsubmit="calculate(event)">
         <div>
-            <label for="username"> 
-                <span>Enter user name </span>
-                <span style="color:red">*</span>
-            </label>
-            <input type="text" id="username" name="username" required>
-            <div id="username_error" style="color:red"></div>
+            <label for="">Enter A value:</label>
+            <input type="text" id="first-value">
         </div>
-
+         <div>
+            <label for="">Enter B value:</label>
+            <input type="text" id="second-value">
+        </div>
+        <div class="result"></div>
         <div>
-            <button type="submit">Register</button>
+            <button type="submit">Calculate</button>
         </div>
     </form>
+    
 
 
     <script src="./index.js"></script>
