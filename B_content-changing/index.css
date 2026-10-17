@@ -1,3 +1,9 @@
 .text-color{
-    color:green;
+    color:white;
+}
+.fs-64{
+    font-size:64px;
+}
+.bg-color {
+    background-color: rebeccapurple;
 }
