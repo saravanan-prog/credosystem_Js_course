@@ -7,13 +7,15 @@ function counterProgram() {
 
     function displayCount() {
         count++;                               
-        console.log("count====>",count);
+        console.log("count====>",count);   // 1
     }
 
     return displayCount;
 }
 
 const innerFunction = counterProgram();
+
+
 
 innerFunction(); // 1
 innerFunction(); // 2
