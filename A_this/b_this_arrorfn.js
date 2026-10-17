@@ -1,6 +1,6 @@
+this.employee_firstName = "Kishore"
+this.employee_lastName  = "Metha"
 
-this.employee_firstName = "Rajesh"
-this.employee_lastName  = "Kumar";
 
 const employee = {
     empid : 121,
