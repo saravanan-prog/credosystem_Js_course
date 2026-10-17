@@ -19,5 +19,5 @@ var convertedArr = str.split("-")
 var str = "2nd cross st, velachery, chennai 600042"
 var convertedArr = str.split(",")
 
- 
- console.log("convertedArr====>",convertedArr)
+ console.log("convertedArr===>",convertedArr)
+

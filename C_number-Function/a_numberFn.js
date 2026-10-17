@@ -1,4 +1,4 @@
-var number = 10.2242852
+var number = 10.2246852
 
 var fixedResult = number.toFixed(3)   // 10.224
 
