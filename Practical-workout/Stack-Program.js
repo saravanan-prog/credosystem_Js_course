@@ -4,7 +4,6 @@ class Stack {
         this.fruitsArray = ["apple","Orange","grapes"]
     }
 
-
     addItem(item){
         this.fruitsArray.push(item)
     }
