@@ -1,6 +1,9 @@
+/* Example 2 - Push Method add the value Back side */
+
+
 function addTheElementBackside(){
 
-    var fruits = ["apple","orange"]
+    const fruits = ["apple","orange"]
 
     fruits.push("pineapple")                  // ["apple","orange",pineapple]
     fruits.push("grapes")                     // ["apple","orange",pineapple,"grapes"]
@@ -13,15 +16,12 @@ function addTheElementBackside(){
 
 
 
-
-
-
-
+/* Example 2 - Unshift Method add the value front side */
 
 
 function addTheElementFrontSide(){
 
-    var vegtable = ["onion","cabage"] 
+    const vegtable = ["onion","cabage"] 
     vegtable.unshift("tomoto")          //  ["tomoto","onion","cabage"]          
     vegtable.unshift("bringal")         //  ["bringal","tomoto","onion","cabage"]
  

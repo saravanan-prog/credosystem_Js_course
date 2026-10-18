@@ -1,18 +1,30 @@
-function RemoveMiddleofArrayElement(){
+/*  Example 1 
+ *  splice(currentpos,length) - remove or modify middle of the position 
+ *
+ */
 
-    var fruits = ["apple","orange","grapes","pineapple","mango"]
+function remove_an_element_middleof_position(){
+
+    const fruits = ["apple","orange","grapes","pineapple","mango"]
     console.log("Before Splice Fruis==========>",fruits)
-    fruits.splice(2,2)           // splice(currentpos, howmanyElement)
+    fruits.splice(2,2)                                              
     console.log("After Splice Fruis==========>",fruits)
 }
-//RemoveMiddleofArrayElement()
+//remove_an_element_middleof_position()
 
-function modifyMiddleofArrayElement(){
+
+
+
+/** Example -2  
+ *  Modify the value middle of postion using splice(current_pos,length,"new-value")
+ */
+
+function modify_middleof_position(){
     
-    var fruits = ["apple","orange","grapes","pineapple","mango"]
+    const fruits = ["apple","orange","grapes","pineapple","mango"]
     console.log("Before Splice Fruis==========>",fruits)
-    fruits.splice(1,2,"kiwi","lichi")           // splice(currentpos, howmanyElement)
+    fruits.splice(1,1,"kiwi","lichi")           
     console.log("After Splice Fruis==========>",fruits)
 }
 
-modifyMiddleofArrayElement()
+modify_middleof_position()
