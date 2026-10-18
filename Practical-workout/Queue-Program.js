@@ -1,6 +1,8 @@
 class Queue {
 
-    fruitsArray = ["apple","Orange","grapes"]
+    constructor(){
+        this.fruitsArray = ["apple","Orange","grapes"]
+    }
 
 
     addItem(item){

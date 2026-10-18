@@ -1,6 +1,9 @@
 class Stack {
 
-    fruitsArray = ["apple","Orange","grapes"]
+    constructor(){
+        this.fruitsArray = ["apple","Orange","grapes"]
+    }
+
 
     addItem(item){
         this.fruitsArray.push(item)

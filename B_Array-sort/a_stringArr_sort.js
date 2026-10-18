@@ -6,10 +6,10 @@ function assendingOrder(){
     console.log("convertTostr =====>",convertTostr)
 }
 
-assendingOrder()
+//assendingOrder()
 
 
- //reversal-pattern
+/* Example - REVERSE function help to reverse the string */
  
 function reversalPattern(){
     var newFruits = "saravanan"

@@ -1,7 +1,7 @@
-let fruits = ["apple","orange","grapes","pineapple","mango"]
+const fruits = ["apple","orange","grapes","pineapple","mango"]
 
-let arrTostring = fruits.toString()
-let removeSplchar = fruits.join(" ")
+const arrTostring = fruits.toString()          // apple,orange,grapes,pineapple,mango
+const removeSplchar = fruits.join(" ")         // apple orange grapes pineapple mango
 
-
+console.log("arrTostring====>", arrTostring)
 console.log("removeSplchar====>", removeSplchar)
