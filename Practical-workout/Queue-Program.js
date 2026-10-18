@@ -4,7 +4,6 @@ class Queue {
         this.fruitsArray = ["apple","Orange","grapes"]
     }
 
-
     addItem(item){
         this.fruitsArray.unshift(item)
     }
