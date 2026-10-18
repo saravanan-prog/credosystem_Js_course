@@ -1,18 +1,17 @@
-var days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"]
+const days = ["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"]
 
+const currentTimeStamp = new Date()
+const offerDay = "wednesday"
+const currentDay = currentTimeStamp.getDay()    //0
 
-var currentTimeStamp = new Date()
-var offerDay = "wednesday"
-var currentDay = currentTimeStamp.getDay()
-
-var product = {
+const product = {
     name : "KFC buckket chicken",
     price : 499,
     availability : true
 }
 
 
-if(offerDay == days[currentDay])
+if(offerDay.toLowerCase() === days[currentDay].toLowerCase())
     product.price = product.price - (product.price * 50 / 100)
 
 console.log("product=====>",product)

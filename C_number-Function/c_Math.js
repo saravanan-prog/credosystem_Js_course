@@ -1,17 +1,36 @@
-let choclatePrice   = 99.3
-
-let round    = Math.round(choclatePrice)  //   99.4 => below round 99  =>  99.5  above 100
-let ceil     = Math.ceil(choclatePrice)   //   99.1 to 99.9 => 100 (up)
-let floor    = Math.floor(choclatePrice)   //  99.1 to 99.9 => 99 (down)
-let random   = Math.random()
-let otp      = Math.round( 100 + Math.random()*90000)
+function findtheSqrt(num){
+    var sqrt = Math.sqrt(num)
+    console.log("sqrt =====>",sqrt)
+}
+//findtheSqrt(25)
 
 
-//console.log("round====>",round)
-//console.log("ceil====>",ceil)
-//console.log("floor====>",floor)
- //console.log("random====>",random)
- console.log("otp====>",otp)
+function convertRounofValue(num){
+    var roundOff =  Math.round(num)
+    console.log("Roundoff======>",roundOff)
+}
+// convertRounofValue(10.6)
+
+
+function convertCeilValue(num){
+    var ceilUp = Math.ceil(num)
+    console.log("ceil Value ======>",ceilUp)
+}
+
+//convertCeilValue(22.2)
+
+function convertFloorValue(num){
+    var floorDown = Math.floor(num)
+    console.log("Floor Value ======>",floorDown)
+}
+//convertFloorValue(55.8)
+
+function generateOTPfoundDigit(){
+    var random =  Math.random() * 9000
+    var otp    =  Math.round(random)
+    console.log("Otp=========>",otp)
+}
+generateOTPfoundDigit()
 
 
 

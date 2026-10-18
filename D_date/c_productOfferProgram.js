@@ -2,10 +2,10 @@ var productName = "Apple Product";
 var price = 25000;
 var discount = 8;
 
-var offerStart = new Date("2026-11-28");
-var offerEnd   = new Date("2026-12-08");
+var offerStart = new Date("2026-09-18");
+var offerEnd   = new Date("2026-10-08");
 
-var today = new Date();                                   
+var today = new Date();  
 
 
 // Check offer period

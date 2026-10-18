@@ -2,14 +2,14 @@ const DAYS = ["sunday","monday","Tuesday","wednesday","Thursday","Friday","Satur
 const MONTHS = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"]
 
 
-var timeStamp      =  new Date();
-var year           =  timeStamp.getFullYear()
-var currentMonth   =  MONTHS[timeStamp.getMonth()]
-var month          =  timeStamp.getMonth() + 1
-var currentDate    =  timeStamp.getDate()
-var currentDay     =  timeStamp.getDay()
-var hours          =  timeStamp.getHours()
-var minutes        =  timeStamp.getMinutes()
+const timeStamp      =  new Date();
+const year           =  timeStamp.getFullYear()
+const currentMonth   =  MONTHS[timeStamp.getMonth()]
+const month          =  timeStamp.getMonth() + 1
+const currentDate    =  timeStamp.getDate()
+const currentDay     =  timeStamp.getDay()
+const hours          =  timeStamp.getHours()
+const minutes        =  timeStamp.getMinutes()
 
 
 
@@ -23,7 +23,6 @@ console.log("currentDay====>",currentDay)             // 1
 console.log("day===>",DAYS[currentDay])               // monday
 console.log("hours===>",hours)
 console.log("minutes===>",minutes)
-console.log("zone===>",zone)
 
 
 
