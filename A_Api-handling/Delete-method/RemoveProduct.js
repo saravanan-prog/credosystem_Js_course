@@ -1,11 +1,16 @@
 
 async function getAllComments(endPointUrl,option){
-
-    var response = await fetch(endPointUrl,option)
-    var responseData = await response.json()
-
-    console.log("responseData===>",responseData)
+    try{
+        const response = await fetch(endPointUrl,option)
+        const responseData = await response.json()
+        console.log("responseData===>",responseData)
+    }
+    catch(error){
+        console.error("Api Error")
+    }
 }
+
+const endPointUrl = "https://fakestoreapi.com/products/3"
 
 const option = {
     method :"DELETE",
@@ -15,5 +20,4 @@ const option = {
 }
 
 
-const endPointUrl = "https://fakestoreapi.com/products/3"
 getAllComments(endPointUrl,option)

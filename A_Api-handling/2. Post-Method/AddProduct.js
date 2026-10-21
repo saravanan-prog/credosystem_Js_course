@@ -8,15 +8,16 @@ async function addProductInServer(endPointUrl,option){
         }
     }
     catch(error){
-        console.log("Error::::",error?.status)
+        console.log("Error::::",error)
     }
     
 }
 
-const product = {
-    name : "Apple Laptop",
+const endpointURL = "https://fakestoreapi.com/products"
+
+const productPayload = {
+    title : "Apple Laptop",
     price : 280,
-    isAvailble : true
 }
 
 const option = {
@@ -24,7 +25,6 @@ const option = {
     headers:{
         "Content-Type":"application/json"
     },
-    body : JSON.stringify(product)
+    body : JSON.stringify(productPayload)
 }
-const endpointURL = "https://fakestoreapi.com/products"
 addProductInServer(endpointURL,option)

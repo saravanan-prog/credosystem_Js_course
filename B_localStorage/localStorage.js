@@ -3,25 +3,24 @@ const htmlContainer = document.getElementById('data-info')
 function register(){
     
     const userInformation  = {
-       
         "username": "saravanan@gmail.com",
         "email": "saravanan@gmail.com",
         "password": "Test@123"
     }
 
-    localStorage.setItem("user",JSON.stringify(userInformation))
-
+    localStorage.setItem("userInformation",JSON.stringify(userInformation))
+    htmlContainer.innerHTML =`Your Record is added local storage`
 
 }
 
 function viewData(){
 
    
-    let userData = localStorage.getItem("user")
+    var userData = localStorage.getItem("userInformation")
 
-    userData = JSON.parse(userData)
+    var userData = JSON.parse(userData)
 
-    let content = `
+    const content = `
         <p>Name :  ${userData?.username} </p>
         <p>Email :  ${userData?.email} </p>
         <p>Password :  ${userData?.password} </p>
@@ -33,7 +32,7 @@ function viewData(){
 
 function removeUser(){
     
-    localStorage.removeItem("user")
+    localStorage.removeItem("userInformation")
     htmlContainer.innerHTML =`Your Record has been deleted`
 }
 
