@@ -1,3 +1,5 @@
+/*  Example 1 :  Filter method Basic understand */
+
 function basicFilterUnderstand(){
     var orignalArr = [100,200,300,400,750]
 
@@ -15,50 +17,43 @@ function basicFilterUnderstand(){
 
 
 
-
-
-
-
+/*  Example 2 :  Remove duplicate Elements */
 
 
 function removeDuplicatevalues() {
 
   var orignalArr = [100, 100, 200, 300, 300, 400, 750];
 
-  var transformArray = orignalArr.filter((value, index, arr) => {
+  var uniqueArray = orignalArr.filter((value, index, selfArr) => {
 
-    return index === arr.indexOf(value)         //  2 === 3             =>    [100]                   
+    return index === selfArr.indexOf(value)                                        
 
   });
 
   console.log("orignalArr===>", orignalArr);
-  console.log("transformArray===>", transformArray);
+  console.log("uniqueArray===>", uniqueArray);
 
 }
 
-removeDuplicatevalues()
 
 
-
-
-
+/*  Example 3 : Find duplicate Elements */
 
 
 function findDuplicateElemnts() {
 
   var orignalArr = [100, 100, 200, 300, 300, 400, 750];
 
-  var transformArray = orignalArr.filter((value, index, arr) => {
+  var duplicateList = orignalArr.filter((value, index, arr) => {
 
     return index !== arr.indexOf(value)        
 
   });
 
   console.log("orignalArr===>", orignalArr);
-  console.log("transformArray===>", transformArray);
+  console.log("duplicateList===>", duplicateList);
 
 }
 
-// findDuplicateElemnts()
 
 

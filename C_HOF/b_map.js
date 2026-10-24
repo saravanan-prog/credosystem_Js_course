@@ -1,4 +1,7 @@
+/* Example 1 :  Map Basic understand */
+
 function basicunderStand() {
+
   var orignalArr = [100, 200, 300, 400, 750];
   var duplicateArr = orignalArr.map((value, index, arr) => {
     return value;
@@ -8,9 +11,9 @@ function basicunderStand() {
   console.log("duplicateArr===>", duplicateArr);
 }
 
-// basicunderStand()
 
 
+/* Example 2:  Map Transofrm all value multipy with 5  */
 
 function transfromNewArrayMultiplyFive() {
 
@@ -21,11 +24,10 @@ function transfromNewArrayMultiplyFive() {
   console.log("newArrmulfive===>", newArrmulfive);
 }
 
-//transfromNewArrayMultiplyFive();
 
 
 
-
+/* Example 3 - workout */
 function addTitleNewnamelist() {
 
   var passengerList = [
