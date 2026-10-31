@@ -3,8 +3,8 @@ function greetings(){
   var promise  = new Promise(
     (resolve,reject ) =>{
         setTimeout(()=> {
-           console.log("Hello Rajesh")
-           resolve("done")
+          console.log("Hello Rajesh")
+          resolve("done")
         },5000)
     }
   )
@@ -18,17 +18,12 @@ function treat(){
     (resolve,reject)=> {
         setTimeout(()=>{
           console.log("Having treat")
-          reject()
+          resolve()
         },1000)
-
-      
     }
   )
    
   return promise
-
- 
-  
 }
 
 function sayBye(){
@@ -37,11 +32,9 @@ function sayBye(){
 
 greetings().then(
   (data) => {
-    treat().then(
-      () => {
-        sayBye()
-      }
-    )
+    treat().then(() => {
+      sayBye()
+    })
     .catch(()=> console.log("Treat method some thing went wrong"))
   }
 )
