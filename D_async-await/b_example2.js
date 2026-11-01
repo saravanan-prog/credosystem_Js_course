@@ -1,5 +1,5 @@
 function getProduct(){
-    
+
     var promise =  new Promise((resolve,reject) => {
         setTimeout(()=>{
             var product ={
@@ -8,7 +8,10 @@ function getProduct(){
                 productPrice : 120
             }
 
-            resolve(product)
+            if(product != undefined)
+                resolve(product)
+            else 
+                reject("Product is empty")
         
         },3000)
 
@@ -17,26 +20,38 @@ function getProduct(){
    return promise
 }
 
-function discountOffer(product){
+
+async function discountOffer(){
+
+    var product = await getProduct()
 
     var promise =  new Promise((resolve,reject) => {
         let offer = 50;
         const  productPrice  = product.productPrice
         let discountPrice = productPrice - (productPrice * offer/100)
         product.productPrice = discountPrice
-        reject(product)
+        if(product !=undefined){
+            resolve(product)
+        }
+        else{
+            reject("Product is empty")
+        }
     })
 
     return promise
     
 }
 
-function couponcodeValidation(couponCode,product){
-    var promise = new Promise( (resolve,reject)=>{
-        if(couponCode=='WED100'){
-            product.productPrice = product.productPrice - 10
 
-            resolve(product)
+async function couponcodeValidation(couponCode){
+    var discountProduct = await discountOffer()
+    var promise = new Promise( (resolve,reject)=>{
+        if(couponCode=='WED10'){
+            discountProduct.productPrice = discountProduct.productPrice - 10
+            if(discountProduct != undefined)
+                resolve(discountProduct)
+            else
+                reject("Discount product is empty")
         }
         reject("Coupon Error")
     })
@@ -48,12 +63,8 @@ function couponcodeValidation(couponCode,product){
 async function mainFunction(){
 
     try{
-        let product = await getProduct()
-        console.log("product====>",product)
-        let discountProduct = await discountOffer(product);
-         console.log("discountProduct====>",discountProduct)
-        let couponOffer = await couponcodeValidation("WED100",discountProduct)
-        console.log("couponOffer====>",couponOffer)
+       const finalProductResult =  await couponcodeValidation("WED10")
+       console.log("Final Product Result =====>",finalProductResult)
     }
     catch(error) {
         console.error("error =====>",error)
