@@ -5,18 +5,19 @@ function buttonOneEvent(){
     console.log("button1 is clicked")
 }
 
-/* Button 2 */
+/* Button 2  - Event Listner */
 const buttonElement = document.querySelector("#button2")
-buttonElement.addEventListener(
-    "click",()=>{
+
+buttonElement.addEventListener("click",() => {
     console.log("Button2 is clicked")
 })
 
 
-/* Select box event */
+/* Select box event - Event Listner */
+
 const selectBox = document.querySelector("#fruits")
-selectBox.addEventListener(
-    "change",(event)=>{
+
+selectBox.addEventListener("change",(event)=>{
         console.log(event.target.value)
     }
 )

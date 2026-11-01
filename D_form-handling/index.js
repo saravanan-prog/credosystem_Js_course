@@ -1,34 +1,33 @@
 
 function calculate(event){
     event.preventDefault()
-    const form = document.querySelector("form")
+    const form        = document.querySelector("form")
+    const resultdiv   = document.querySelector(".result")
+    var errorSelector = document.querySelector(".error")
 
-    const resultdiv = document.querySelector(".result")
     if( (form[0].value == null || form[0].value == "") && 
         (form[1].value == null || form[1].value == "")
       ){
-        console.error("A and B values is missing")
+      errorSelector.innerText =  "A and B values is missing"
     }
     else if(form[0].value == null || form[0].value == "" ){
-        console.error("A value is missing")
+        errorSelector.innerText = "A value is missing"
     }
     else if(form[1].value == null || form[1].value == "" ){
-        console.error("B value is missing")
+       errorSelector.innerText = "B value is missing"
     }
     else{
         const firstValue = form[0].value;
         const secondValue = form[1].value;
         var result  = Number(firstValue) + Number(secondValue)
+        
         resultdiv.innerHTML = `
-            <span style="border:2px solid;padding:5px"> ${result} </span>
+            <div class="border border-rounded">
+              ${result}
+            </div>
         `
     }
 
-
-
-
-
-
-   
+ 
     
 }

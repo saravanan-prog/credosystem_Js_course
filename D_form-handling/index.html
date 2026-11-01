@@ -2,27 +2,31 @@
 <html lang='en'>
 <head>
   <title> Form Validatio </title>
-</head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 <body>
      
-    <form onsubmit="calculate(event)">
+   <div class="container">
+     <form onsubmit="calculate(event)">
+        <p class="error fs-2 text-danger" ></p>
         <div>
-            <label for="">Enter A value:</label>
+            <label for="first-value">Enter A value:</label>
             <input type="text" id="first-value">
         </div>
          <div>
-            <label for="">Enter B value:</label>
+            <label for="second-value">Enter B value:</label>
             <input type="text" id="second-value">
         </div>
-        <div class="result"></div>
-        <div>
+      
+        <div class="result  p-3 text-success fs-5 mt-3 "></div>
+        <div> 
             <button type="submit">Calculate</button>
         </div>
     </form>
+   </div>
     
 
-
     <script src="./index.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 </html>
