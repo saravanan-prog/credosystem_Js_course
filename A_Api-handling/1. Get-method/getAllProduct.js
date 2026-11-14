@@ -3,28 +3,23 @@
  *   Http = GET, POST, PUT, PATCH, DELETE
  */
 
-async function getAllProducts(endPointUrl,option){
-    try{
-        var response = await fetch(endPointUrl,option)
-        var responseData = await response.json()
-        console.log("responseData===>",responseData)
-    }
-    catch(error){
-        console.error("Error::::",error)
-    }
-}
 
+const url = `https://fakestoreapi.com/products`
 
-const endPointUrl = "https://fakestoreapi.com/products"
 const option = {
-    method :"GET",
+    method : "GET",
     headers:{
-        "Content-Type" : "application/json"
+        "Content-Type":"application/json"
     }
 }
-getAllProducts(endPointUrl,option)
 
+const getProducts = async (url,option) => {
+    const response =  await fetch(url,option)
+    const responseData = await response.json()
 
+    console.log("responseData ============>",responseData)
+}
 
+getProducts(url,option)
 
 

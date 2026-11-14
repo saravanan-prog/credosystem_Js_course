@@ -18,7 +18,7 @@ function viewData(){
    
     var userData = localStorage.getItem("userInformation")
 
-    var userData = JSON.parse(userData)
+    userData = JSON.parse(userData)
 
     const content = `
         <p>Name :  ${userData?.username} </p>

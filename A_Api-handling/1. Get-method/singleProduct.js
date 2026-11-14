@@ -1,3 +1,5 @@
+
+
 async function getSingleProduct(endPointUrl,option){
     try{
         const response     = await fetch(endPointUrl,option)

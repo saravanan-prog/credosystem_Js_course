@@ -14,7 +14,7 @@ async function addProductInServer(endPointUrl,option){
 }
 const endpointURL = "https://fakestoreapi.com/products/3"
 
-const productPayload = {
+const payload = {
   "title": "Apple iphone", 
   "price": 500000
 }
@@ -24,6 +24,6 @@ const option = {
     headers:{
         "Content-Type":"application/json"
     },
-    body : JSON.stringify(productPayload)
+    body : JSON.stringify(payload)
 }
 addProductInServer(endpointURL,option)
